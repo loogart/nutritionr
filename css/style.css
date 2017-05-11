@@ -665,6 +665,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     margin: 3px auto;
     color: #777;
 }
+
 .dropdown-menu > li.header > a:hover,
 .dropdown-menu > li.header > a:focus {
     text-decoration: none;
@@ -673,7 +674,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     transform: translate(0);
 }
 
-.notifications-menu li.header{
+.notifications-menu li.header {
     background-color: #eee;
 }
 
@@ -1799,7 +1800,7 @@ p.profil-label {
         width: 100%;
         background-color: #343434;
         color: #ccc;
-        margin-top:20px;
+        margin-top: 20px;
     }
     footer ul.list-unstyled li a {
         color: #ccc;
@@ -2110,7 +2111,7 @@ textarea {
         border-right: 1px solid #DCE0E0;
         z-index: 3;
         overflow-y: scroll;
-        padding-bottom:60px;
+        padding-bottom: 60px;
     }
     .notifications-right {
         background-color: #fff;
@@ -2212,7 +2213,7 @@ textarea {
         right: 0;
         margin-top: 60px;
         padding-top: 20px;
-        padding-bottom:70px;
+        padding-bottom: 70px;
     }
     .notifications-right h4 {
         line-height: 24px;
@@ -2259,6 +2260,83 @@ li.media:after {
     display: block;
     margin: 20px auto 8px;
 }
+
 .team-member {
     margin-bottom: 20px;
+}
+
+
+/*new css May 2017*/
+
+.jumbotron-home-2 {
+    min-height: 96vh;
+    background-position: center 44%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    padding: 50px;
+    text-align: left;
+    color: #fff;
+    background-image: url('../img/jumbotron.jpg');
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+.jumbotron-home-2 h2 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 4.2em;
+    line-height: 1em;
+    margin: 30px auto;
+}
+
+@media (max-width: 767px) {
+    .jumbotron-home-2 {
+        min-height: 100vh;
+        background-position: 50% 90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: 60px;
+        padding: 0;
+        background-color: #fff;
+        background-image: url('../img/jumbotron-mobile.jpg');
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jumbotron-home-2 .container-fluid {
+       -ms-flex-item-align: start;
+       align-self: flex-start;
+    }
+    .jumbotron-home-2 h2 {
+        color: #11baa1;
+        font-weight: bolder;
+        font-size: 2em;
+        line-height: 1em;
+        margin: 30px auto;
+    }
+    .jumbotron-home-2 .btn{
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left:20px;
+        right:20px;
+        margin: auto;
+        
+    }
 }
