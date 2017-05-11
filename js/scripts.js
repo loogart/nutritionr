@@ -14,4 +14,5 @@ $(document).ready(function () {
         $('.notifications-right').toggleClass('notifications-right-active');
         $('.respond').toggleClass('hidden-xs visible-xs');
     });
+
 });

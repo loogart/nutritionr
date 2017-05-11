@@ -2269,6 +2269,7 @@ li.media:after {
 /*new css May 2017*/
 
 .jumbotron-home-2 {
+    
     min-height: 96vh;
     background-position: center 44%;
     background-repeat: no-repeat;
@@ -2288,7 +2289,6 @@ li.media:after {
     justify-content: center;
 }
 
-
 .jumbotron-home-2 h2 {
     color: #11baa1;
     font-weight: bolder;
@@ -2297,7 +2297,18 @@ li.media:after {
     margin: 30px auto;
 }
 
-@media (max-width: 767px) {
+.jumbotron-home-2 .btn {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.jumbotron-home-2 .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+ @media (max-width: 767px) {
     .jumbotron-home-2 {
         min-height: 100vh;
         background-position: 50% 90px;
@@ -2320,8 +2331,8 @@ li.media:after {
         justify-content: center;
     }
     .jumbotron-home-2 .container-fluid {
-       -ms-flex-item-align: start;
-       align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
     }
     .jumbotron-home-2 h2 {
         color: #11baa1;
@@ -2330,13 +2341,12 @@ li.media:after {
         line-height: 1em;
         margin: 30px auto;
     }
-    .jumbotron-home-2 .btn{
+    .jumbotron-home-2 .btn {
         display: inline-block;
         position: absolute;
         bottom: 20px;
-        left:20px;
-        right:20px;
+        left: 20px;
+        right: 20px;
         margin: auto;
-        
     }
 }
