@@ -175,6 +175,11 @@ keyframes slide-from-up {
     object-fit: contain;
     width: 160px;
     margin: 16px auto;
+    transition: all .2s ease-in;
+}
+
+.benefit-badge img:hover {
+    transform: translateY(-10px);
 }
 
 .benefit-badge h3 {
