@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- create account modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="createAccount">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-facebook btn-lg btn-block" data-dismiss="modal"><i class="fa fa-facebook-official"></i> S'inscrire avec Facebook</button>
+                    <hr class="subtle">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"><i class="fa fa-envelope-o"></i> S'inscrire par courriel</button>
+                    <p>
+                        En vous inscrivant, vous acceptez les <a href="#!" class="teal">termes et les conditions</a> de Nutritionr.
+                    </p>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-6">Déjà un membre de Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Connectez-vous!</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- Sign In modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="signIn">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="text" class="form-control input-lg" placeholder="Email" value="chris@loogart.com">
+                        <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="password" class="form-control input-lg" placeholder="Password" value="niggawhutniggawho">
+                        <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <a href="tableau.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-arrow-right"></i> Se connecter</a>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Rappelez-vous de moi
+                        </label>
+                    </div>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-12"><a href="#!" class="teal">Oublié votre mot de passe?</a></p>
+                        <p class="col-xs-6">Pas encore inscrit à Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Créer un compte</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#"><i class="fa fa-cog"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html"><i class="fa fa-home hidden-xs"></i><span class="visible-xs">Accueil</span></a></li>
+                    <li><a href="pricing.html">Forfaits</a></li>
+                    <li><a href="team.html">L'équipe</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-home" style="background-image:url('../img/new-designs/jumbotron.jpg')">
+        <div class="container">
+            <h1>Pas une diète. Nutritionr.</h1>
+            <p>Suivi nutritionnel en ligne.</p>
+            <a href="#!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#createAccount"><i class="fa fa-plus"></i> Créer votre compte</a>
+        </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row-block grey-bg">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Fonctionnement</h4>
+                <h2>En ligne. En santé.</h2>
+            </div>
+            <div class="col-sm-12">
+                <div class="card-coach">
+                    <div class="card-img-vertical" style="background-image:url('./img/home2.jpg')"></div>
+                    <div class="card-content-vertical">
+                        <h3>Une santé guidée en ligne</h3>
+                        <p>Nutritionr est une plateforme de coaching nutritionnel en ligne.</p>
+                        <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#howItWorks">Fonctionnement</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <!-- Modal how it works -->
+    <div class="modal fade" id="howItWorks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:100%;margin:0;">
+            <div class="modal-content teal-bg" style="min-height:100vh;border:0">
+                <div class="modal-header" style="border-bottom:0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step1.png">
+                        <h4 style="line-height:24px;">Connectez virtuellement</h4>
+                        <p>Rencontrez votre coach Nutritionr virtuellement et discutez de vos objectifs nutritionnels.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step2.png">
+                        <h4 style="line-height:24px;">Obtenez un plan personnalisé</h4>
+                        <p>Votre coach de nutrition vous bâtira un plan personalisé pour atteindre vos objectifs.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step3.png">
+                        <h4 style="line-height:24px;">Suivi par un coach</h4>
+                        <p>Votre progression sera suivie par votre coach et votre plan sera adapté en conséquence de vos résultats.</p>
+                    </div>
+                    <div class="col-sm-12" style="margin-top:40px;">
+                        <a href="#!" class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Débutez aujourd'hui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- row 1 -->
+    <div class="row-block">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">On pense à vous</h4>
+                <h2>Améliorez votre nutrition</h2>
+            </div>
+
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="home-features" style="background-image:url('./img/adaptable.png')"></div>
+                <h3 class="teal">Adapté</h3>
+                <p>Notre équipe de coachs nutritionnels développent des stratégies de perte de poids adapté à votre train de vie. Ceci facilite l’adoption d’habitudes alimentaires saines qui vous suivront tout votre vie.
+                </p>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-6 col-md-4 text-center">
+                <div class="home-features" style="background-image:url('./img/macbook.png')"></div>
+                <h3 class="teal">Accessible</h3>
+                <p>Les services sont livrés en ligne, donc vous êtes en contact 24/7 avec votre coach qui s'adapte à vos objectifs et à votre plan. Votre coach a donc la capacité de réagir rapidement aux changements que vous percevez.
+                </p>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-6 col-md-4 text-center">
+                <div class="home-features" style="background-image:url('./img/professional.png')"></div>
+                <h3 class="teal">Professionnel</h3>
+                <p>Notre équipe vous présente l’information au plus haut standard possible. Nous prenons soins de rester informés pour mieux vous guider. Les diètes tendances ou extrême ne font pas partie de notre répertoire.
+                </p>
+                <hr class="subtle visible-xs">
+            </div>
+        </div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="row-block grey-bg">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Nos connaissances</h4>
+                <h2>Votre boîte à outils</h2>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Plan nutritionnel personnalisé</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Programme d’entraînement offert gratuitement</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/recettes.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Recettes simples</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/education.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Matériel éducatif</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+
+    <!-- row 4 -->
+    <div class="row-block">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">On vous attend</h4>
+                <h2>À vos marques. Prêts?</h2>
+            </div>
+            <div class="col-sm-12 text-center">
+                <a href="#!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#createAccount"><i class="fa fa-check"></i> Mangez santé</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<p>Nutritionr est une plateforme de coaching nutritionnel en ligne. Nos entraîneurs sont qualifiés en conseil nutritionnel de haut niveau et vous proposent des plans optimisés à votre mode de vie pour vous aider à garantir vos objectifs physiques.</p>-->
+
+
+    <!--- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+</body>
+
+</html>
