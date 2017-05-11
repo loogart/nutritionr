@@ -81,6 +81,7 @@ body {
     padding: 50px;
     text-align: left;
     color: #fff;
+    background-color: #fff;
     background-image: url('../img/jumbotron.jpg');
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,6 +174,7 @@ body {
     background-size: cover;
     text-align: center;
     color: #fff;
+    background-color: #fff;
     background-image: url('../img/pre-footer.jpg');
     display: -webkit-box;
     display: -ms-flexbox;
