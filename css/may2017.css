@@ -1,0 +1,415 @@
+/*new css May 2017*/
+
+body {
+    background-color: #11baa1;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent border-bottom: 0px solid #DCE0E0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.nav-tabs.nav-justified>li {
+    float: none;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0px;
+    }
+    .navbar {
+        position: fixed;
+        min-height: 50px;
+        top: 0;
+        margin-bottom: 0;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    .navbar-default {
+        background-color: #fff;
+        border-bottom: 1px solid #DCE0E0;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+    }
+    .navbar-default .navbar-nav>li {
+        border-top: 1px solid #e5e5e5;
+    }
+}
+
+.navbar-nav>li {
+    border-left: 0
+}
+
+.navbar-nav>li>a {
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-text {
+    color: #111;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-weight: 400;
+    color: #111;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #11baa1;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #11baa1;
+    background-color: transparent;
+}
+
+.jumbotron-home-2 {
+    min-height: 96vh;
+    background-position: center 44%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: left;
+    color: #fff;
+    background-image: url('../img/jumbotron.jpg');
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.31);
+}
+
+.jumbotron-home-2 h2 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 4.2em;
+    line-height: 1em;
+    margin: 30px auto;
+}
+
+.jumbotron-home-2 .btn {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.jumbotron-home-2 .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.brand-2 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    display: block;
+    height: 80px;
+    width: 240px;
+    background-image: url('../img/logo-teal-full.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 240px;
+    background-color: #11baa1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.brand-2:hover {
+    height: 100px;
+    width: 240px;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.benefit-badge {
+    padding: 30px 0;
+    display: inline-block;
+}
+
+.benefit-badge img {
+    object-fit: contain;
+    width: 160px;
+    margin: 16px auto;
+}
+
+.benefit-badge h3 {
+    font-weight: 600;
+    font-size: 2.8em;
+    line-height: 1.2em;
+    margin: 20px auto;
+    color: #111!important;
+}
+
+.benefit-badge p {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.3em;
+}
+
+.jumbotron-home-3 {
+    min-height: 40vh;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-image: url('../img/pre-footer.jpg');
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: inset 0px 46px 90px -25px rgba(0, 0, 0, 0.31);
+}
+
+.jumbotron-home-3 h2 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 4.2em;
+    line-height: 1em;
+    margin: 30px auto;
+}
+
+.jumbotron-home-3 .btn {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.jumbotron-home-3 .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.popup-video .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0;
+}
+
+.popup-video .modal-content {
+    height: 100vh;
+    border: 0px solid transparent;
+    border-radius: 0;
+    background-color: #000;
+}
+
+.popup-video .modal-header {
+    padding: 15px;
+    border-bottom: 0px solid transparent;
+}
+
+.popup-video .modal-header .close {
+    margin-top: -2px;
+}
+
+.popup-video .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.popup-video .modal-body {
+    position: relative;
+    padding: 0;
+}
+
+.popup-video .modal-footer {
+    border-top: 1px solid transparent;
+}
+
+.popup-video .modal-footer button {
+    color: #11baa1;
+    border-radius: 50%;
+    background-color: #000;
+    border: 0;
+}
+
+.fade-scale {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .5s cubic-bezier(0, 0, 0.2, 1);
+    transition: all .5s cubic-bezier(0, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.embed-responsive {
+    -webkit-animation: slide-it-in .8s ease;
+    animation: slide-it-in .8s ease;
+}
+
+@-webkit-keyframes slide-it-in {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+keyframes slide-it-in {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .jumbotron-home-2 {
+        min-height: 100vh;
+        background-position: 50% 90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+        padding: 0;
+        background-color: #fff;
+        background-image: url('../img/jumbotron-mobile.jpg');
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jumbotron-home-2 .container-fluid {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+    .jumbotron-home-2 h2 {
+        color: #11baa1;
+        font-weight: bolder;
+        font-size: 2em;
+        line-height: 1em;
+        margin: 30px auto;
+    }
+    .jumbotron-home-2 .btn {
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+    }
+    .brand-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 54px;
+        width: 54px;
+        background-image: url('../img/logo-teal-sq.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #11baa1;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.19);
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    .brand-2:hover {
+        height: 54px;
+        width: 54px;
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+    .benefit-badge {
+        padding: 15px 0;
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+    }
+    .benefit-badge img {
+        object-fit: contain;
+        width: 160px;
+        margin: 16px auto;
+    }
+    .benefit-badge h3 {
+        font-weight: 600;
+        font-size: 2.2em;
+        line-height: 1.4em;
+        margin: 10px auto;
+        color: #111!important;
+    }
+    .benefit-badge p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    .jumbotron-home-3 {
+        min-height: 30vh;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        padding: 30px;
+        background-color: #fff;
+        background-image: url('../img/pre-footer.jpg');
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jumbotron-home-3 h2 {
+        color: #11baa1;
+        font-weight: bolder;
+        font-size: 2em;
+        line-height: 1em;
+        margin: 30px auto;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .popup-video .modal-body {
+        padding-top: 30vh;
+    }
+}
