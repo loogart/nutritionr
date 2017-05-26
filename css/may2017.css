@@ -75,7 +75,7 @@ body {
 
 .jumbotron-home-2 {
     min-height: 96vh;
-    background-position: center 44%;
+    background-position: center 86%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
@@ -100,7 +100,13 @@ body {
     font-weight: bolder;
     font-size: 4.2em;
     line-height: 1em;
-    margin: 30px auto;
+    margin: 20px auto;
+}
+
+.jumbotron-home-2 h4 {
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 24px;
 }
 
 .jumbotron-home-2 .btn {
@@ -198,7 +204,7 @@ keyframes slide-from-up {
 
 .jumbotron-home-3 {
     min-height: 40vh;
-    padding:100px 0;
+    padding: 100px 0;
     background-position: center 25%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -327,7 +333,7 @@ keyframes slide-it-in {
 @media (max-width: 767px) {
     .jumbotron-home-2 {
         min-height: 100vh;
-        background-position: 50% 90px;
+        background-position: 45% 180px;
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
