@@ -16,7 +16,7 @@ h4,
 h5,
 h6,
 a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -187,6 +187,7 @@ p {
     .navbar-default {
         background-color: #fff;
         border-bottom: 1px solid #DCE0E0;
+        -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
         box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
     }
     .navbar-default .navbar-nav>li {
@@ -199,6 +200,7 @@ p {
         background-color: #fff;
         border-color: #e7e7e7;
         border-bottom: 1px solid #DCE0E0;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
     .nav-tabs.nav-justified {
@@ -601,6 +603,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     border: 0px solid #ccc;
     border: 0px solid rgba(0, 0, 0, .15);
     border-radius: 0px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .175);
     box-shadow: 0 1px 3px rgba(0, 0, 0, .175);
 }
 
@@ -734,6 +737,7 @@ li.unread p:first-child {
     -webkit-appearance: none;
     color: #555;
     text-align: center;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 
@@ -988,15 +992,19 @@ fieldset[disabled] .btn-primary-o.focus {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 }
 
 .form-control:focus {
     border-color: #66afe9;
     outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
@@ -1022,6 +1030,7 @@ fieldset[disabled] .btn-primary-o.focus {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0;
     outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 
@@ -1120,6 +1129,7 @@ fieldset[disabled] .btn-primary-o.focus {
         border: 0;
         border-radius: 0;
         outline: 0;
+        -webkit-box-shadow: 0;
         box-shadow: 0;
         height: 100vh;
     }
@@ -1211,6 +1221,7 @@ fieldset[disabled] .btn-primary-o.focus {
 .col-scroll-titles {
     text-align: center;
     background-color: #343434;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     z-index: 2;
     color: #fff;
@@ -1224,6 +1235,7 @@ fieldset[disabled] .btn-primary-o.focus {
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
 }
 
@@ -1385,11 +1397,13 @@ fieldset[disabled] .btn-primary-o.focus {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-filter: none;
     filter: none;
@@ -1403,25 +1417,26 @@ fieldset[disabled] .btn-primary-o.focus {
     width: 20px;
     height: 20px;
     background-color: #337ab7;
-    background-image: -webkit-linear-gradient(top, #11baa1 0%, #11baa1 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#11baa1), to(#11baa1));
     background-image: linear-gradient(to bottom, #11baa1 0%, #11baa1 100%);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff11baa1', endColorstr='#ff11baa1', GradientType=0);
     -webkit-filter: none;
     filter: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
     border: 0px solid transparent;
 }
 
 .slider-selection.tick-slider-selection {
-    background-image: -webkit-linear-gradient(top, #11baa1 0%, #11baa1 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#11baa1), to(#11baa1));
     background-image: linear-gradient(to bottom, #11baa1 0%, #11baa1 100%);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff11baa1', endColorstr='#ff11baa1', GradientType=0);
 }
 
 .slider-tick.in-selection {
-    background-image: -webkit-linear-gradient(top, #11baa1 0%, #11baa1 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#11baa1), to(#11baa1));
     background-image: linear-gradient(to bottom, #11baa1 0%, #11baa1 100%);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff11baa1', endColorstr='#ff11baa1', GradientType=0);
@@ -1445,9 +1460,7 @@ fieldset[disabled] .btn-primary-o.focus {
 .datepicker table tr td.active.disabled,
 .datepicker table tr td.active.disabled:hover {
     background-color: #11baa1;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#11baa1), to(#11baa1));
-    background-image: -webkit-linear-gradient(to bottom, #11baa1, #11baa1);
-    background-image: -webkit-linear-gradient(top, #11baa1, #11baa1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#11baa1), to(#11baa1));
     background-image: linear-gradient(to bottom, #11baa1, #11baa1);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#11baa1', endColorstr='#11baa1', GradientType=0);
@@ -1513,6 +1526,7 @@ p.profil-label {
     right: 0;
     border: 1px solid #ccc;
     background-color: #fff;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, .4);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, .4);
     padding: 15px;
 }
@@ -1551,6 +1565,7 @@ p.profil-label {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.31);
     box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.31);
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -1562,6 +1577,7 @@ p.profil-label {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-box-shadow: inset 0px -406px 200px -69px rgba(0, 10, 10, 0.4);
         box-shadow: inset 0px -406px 200px -69px rgba(0, 10, 10, 0.4);
         padding-top: 75px;
         margin: auto;
@@ -1629,6 +1645,7 @@ p.profil-label {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-box-shadow: inset 0px -406px 200px -69px rgba(0, 10, 10, 0.4);
         box-shadow: inset 0px -406px 200px -69px rgba(0, 10, 10, 0.4);
         padding: 20% 25%;
         text-align: center;
@@ -1706,9 +1723,11 @@ p.profil-label {
         border-radius: 0;
         margin-bottom: 10px;
         margin-top: 10px;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
     .card .no-hover {
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
     .card-img {
@@ -1719,10 +1738,12 @@ p.profil-label {
         background-position: center bottom;
         background-color: #ccc;
         border-radius: 2px 2px 0 0;
+        -webkit-box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
         box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
     }
     .card-content {
         padding: 10px 24px 16px 24px;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
     .row-block .card-content h3 {
@@ -1757,6 +1778,7 @@ p.profil-label {
         background-position: center bottom;
         background-color: #ccc;
         border-radius: 2px 2px 0 0;
+        -webkit-box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
         box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
     }
     .card-content-vertical {
@@ -1818,6 +1840,7 @@ p.profil-label {
         border-radius: 2px;
         margin-bottom: 10px;
         margin-top: 10px;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         -webkit-transition: all .25s ease-in;
         -webkit-transition: all .1s ease-in;
@@ -1826,6 +1849,7 @@ p.profil-label {
     .card-coach {
         background-color: #fff;
         border-radius: 2px;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         margin-bottom: 10px;
         margin-top: 10px;
@@ -1836,9 +1860,11 @@ p.profil-label {
         clear: both
     }
     .card:hover {
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
     .card .no-hover {
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
     .card-img {
@@ -1849,6 +1875,7 @@ p.profil-label {
         background-position: center bottom;
         background-color: #ccc;
         border-radius: 2px 2px 0 0;
+        -webkit-box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
         box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
     }
     .card-content {
@@ -1875,6 +1902,7 @@ p.profil-label {
         background-position: center bottom;
         background-color: #ccc;
         border-radius: 2px 2px 0 0;
+        -webkit-box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
         box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.47);
     }
     .card-content-vertical {
@@ -2145,6 +2173,7 @@ textarea {
         background-color: #f8f8f8;
         padding: 15px;
         position: fixed;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 5px rgba(0, 0, 0, 0.16);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 5px rgba(0, 0, 0, 0.16);
         left: 0;
         z-index: 3;
@@ -2226,6 +2255,7 @@ textarea {
         background-color: #f8f8f8;
         padding: 15px;
         position: fixed;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 5px rgba(0, 0, 0, 0.16);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 5px rgba(0, 0, 0, 0.16);
         left: 0;
         z-index: 3;
@@ -2263,4 +2293,586 @@ li.media:after {
 
 .team-member {
     margin-bottom: 20px;
+}
+
+
+/*new css May 2017*/
+
+body {
+    background-color: #11baa1;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent border-bottom: 0px solid #DCE0E0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.nav-tabs.nav-justified>li {
+    float: none;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0px;
+    }
+    .navbar {
+        position: fixed;
+        min-height: 50px;
+        top: 0;
+        margin-bottom: 0;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    .navbar-default {
+        background-color: #fff;
+        border-bottom: 1px solid #DCE0E0;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+    }
+    .navbar-default .navbar-nav>li {
+        border-top: 1px solid #e5e5e5;
+    }
+}
+
+.navbar-nav>li {
+    border-left: 0
+}
+
+.navbar-nav>li>a {
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-text {
+    color: #111;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-weight: 400;
+    color: #111;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #11baa1;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #11baa1;
+    background-color: transparent;
+}
+
+.jumbotron-home-2 {
+    min-height: 96vh;
+    background-position: center 86%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: left;
+    color: #fff;
+    background-color: #fff;
+    background-image: url('../img/jumbotron.jpg');
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: inset 0px -46px 90px -25px rgba(0, 0, 0, 0.31);
+}
+
+.jumbotron-home-2 h2 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 4.2em;
+    line-height: 1em;
+    margin: 20px auto;
+}
+
+.jumbotron-home-2 h4 {
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.jumbotron-home-2 .btn,
+.jumbotron-home-3 .btn,
+.jumbotron-forfaits .btn {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 10px 15px 0 rgba(0, 0, 0, 0.21);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    border-radius: 8px;
+    padding: 15px 36px;
+}
+
+.jumbotron-home-2 .btn:hover,
+.jumbotron-home-3 .btn:hover,
+.jumbotron-forfaits .btn:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.brand-2 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    display: block;
+    height: 80px;
+    width: 240px;
+    background-image: url('../img/logo-teal-full.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 240px;
+    background-color: #11baa1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-animation: slide-from-up .3s ease;
+    animation: slide-from-up .3s ease;
+}
+
+@-webkit-keyframes slide-from-up {
+    0% {
+        -webkit-transform: translateY(-120px);
+        transform: translateY(-120px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+keyframes slide-from-up {
+    0% {
+        -webkit-transform: translateX(-120px);
+        transform: translateX(-120px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.brand-2:hover {
+    height: 100px;
+    width: 240px;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+.benefit-badge {
+    padding: 30px 0;
+    display: inline-block;
+}
+
+.benefit-badge img {
+    object-fit: contain;
+    width: 160px;
+    margin: 16px auto;
+    transition: all .2s ease-in;
+}
+
+.benefit-badge img:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-badge h3 {
+    font-weight: 600;
+    font-size: 2.8em;
+    line-height: 1.2em;
+    margin: 20px auto;
+    color: #111!important;
+}
+
+.benefit-badge p {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.3em;
+}
+
+.jumbotron-home-3 {
+    min-height: 40vh;
+    padding: 100px 0;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    background-image: url('../img/pre-footer.jpg');
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: inset 0px 46px 90px -25px rgba(0, 0, 0, 0.31);
+}
+
+.jumbotron-home-3 h2 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 4.2em;
+    line-height: 1em;
+    margin: 30px auto;
+}
+
+.popup-video .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0;
+}
+
+.popup-video .modal-content {
+    height: 100vh;
+    border: 0px solid transparent;
+    border-radius: 0;
+    background-color: #000;
+}
+
+.popup-video .modal-header {
+    padding: 15px;
+    border-bottom: 0px solid transparent;
+}
+
+.popup-video .modal-header .close {
+    margin-top: -2px;
+}
+
+.popup-video .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.popup-video .modal-body {
+    position: relative;
+    padding: 0;
+}
+
+.popup-video .modal-footer {
+    border-top: 1px solid transparent;
+}
+
+.popup-video .modal-footer button {
+    color: #11baa1;
+    border-radius: 50%;
+    background-color: #000;
+    border: 0;
+}
+
+.fade-scale {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .5s cubic-bezier(0, 0, 0.2, 1);
+    transition: all .5s cubic-bezier(0, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.embed-responsive {
+    -webkit-animation: slide-it-in .8s ease;
+    animation: slide-it-in .8s ease;
+}
+
+@-webkit-keyframes slide-it-in {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+keyframes slide-it-in {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .jumbotron-home-2 {
+        min-height: 100vh;
+        background-position: 45% 180px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+        padding: 0;
+        background-color: #fff;
+        background-image: url('../img/jumbotron-mobile.jpg');
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jumbotron-home-2 .container-fluid {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+    .jumbotron-home-2 h2 {
+        color: #11baa1;
+        font-weight: bolder;
+        font-size: 2em;
+        line-height: 1em;
+        margin: 30px auto;
+    }
+    .jumbotron-home-2 .btn {
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+    }
+    .brand-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 54px;
+        width: 54px;
+        background-image: url('../img/logo-teal-sq.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #11baa1;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.19);
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    .brand-2:hover {
+        height: 54px;
+        width: 54px;
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+    .benefit-badge {
+        padding: 15px 0;
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+    }
+    .benefit-badge img {
+        object-fit: contain;
+        width: 160px;
+        margin: 16px auto;
+    }
+    .benefit-badge h3 {
+        font-weight: 600;
+        font-size: 2.2em;
+        line-height: 1.4em;
+        margin: 10px auto;
+        color: #111!important;
+    }
+    .benefit-badge p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    .jumbotron-home-3 {
+        min-height: 30vh;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        padding: 30px;
+        background-color: #fff;
+        background-image: url('../img/pre-footer.jpg');
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jumbotron-home-3 h2 {
+        color: #11baa1;
+        font-weight: bolder;
+        font-size: 2em;
+        line-height: 1em;
+        margin: 30px auto;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .popup-video .modal-body {
+        padding-top: 30vh;
+    }
+}
+
+
+/*new css August 2017*/
+
+.jumbotron-forfaits {
+    min-height: 50vh;
+    background-image: url(../img/drawings/pricing-img1.svg), url(../img/drawings/pricing-img2.svg);
+    background-position: left 75%, right 75%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 160px, 160px;
+    padding: 80px 15px 0;
+    color: #101010;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron-forfaits__title {
+    max-width: 70vw;
+}
+
+.jumbotron-forfaits h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #101010;
+    font-size: 5.4rem;
+    font-weight: 900;
+    line-height: 5.8rem;
+    margin-bottom: 20px;
+}
+
+.jumbotron-forfaits h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #101010;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.jumbotron-forfaits h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #343434;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 20px auto;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 60px 15px;
+}
+
+.main-content .row-padding .row {
+    padding-bottom: 169px;
+}
+
+.main-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #101010;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.main-content__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.main-content__img img {
+    object-fit: cover;
+    height: 360px;
+    width: 100%;
+    filter: grayscale(1);
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.32);
+    transition: all .2s ease;
+}
+
+.main-content__img img:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-content__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    min-height: 360px;
+}
+
+.main-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #101010;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .jumbotron-forfaits {
+        background-image: url(../img/drawings/pricing-img1.svg);
+        background-position: 44% -10px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 120px;
+        padding-top: 159px;
+    }
+    .jumbotron-forfaits h2 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        color: #11baa1;
+    }
+    .main-content .row-padding .row {
+        padding-bottom: 30px;
+    }
+    .main-content__img img {
+        object-fit: cover;
+        height: 240px;
+        width: 100%;
+        filter: grayscale(1);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    .main-content__img img:hover {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nutritionr</title>
+    <title>Forfaits | Nutritionr</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -115,7 +115,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="forfaits.html">Forfaits</a></li>
+                    <li class="active"><a href="forfaits.html">Forfaits</a></li>
                     <li><a href="equipe.html">L'équipe</a></li>
                     <li><a href="blogue.html">Blogue</a></li>
                     <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
@@ -127,94 +127,69 @@
     <!-- background-mobile-menu-->
     <div class="toggle-menu mobile-menu-closed"></div>
 
-    <!-- jumbotron -->
-    <div class="jumbotron-home-2">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h1 class="hidden">Nutritionr</h1>
-                    <h2>Votre nutrition prise en main.</h2>
-                    <h4>Plateforme de coaching nutritionnel en ligne</h4>
-                    <a href="#!" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal" data-target="#videoPopup"><i class="fa fa-play"></i> Visionner la vidéo</a>
-                    <a href="#!" class="btn btn-warning btn-lg hidden-xs" data-toggle="modal" data-target="#signIn"><i class="fa fa-play"></i> Démarrer</a>
-                </div>
-                <a href="#!" class="btn btn-primary btn-lg visible-xs" data-toggle="modal" data-target="#videoPopup"><i class="fa fa-play"></i> Visionner la vidéo</a>
-            </div>
+    <!-- jumbotron forfaits -->
+    <div class="jumbotron-forfaits">
+        <div class="jumbotron-forfaits__title">
+            <h2>Deux semaines gratuites.</h2>
+            <h5>Cherchez-vous la meilleure façon de trouver le juste milieu entre une nutrition saine et une promotion au travail? Essayez notre service de nutrition en ligne pendant 2 semaines gratuitement. Commencez sans payer. </h5>
+            <a href="#!" class="btn btn-primary btn-lg"> Explorez nos forfaits</a>
+            <h6>32.50$ / 2 semaines par la suite.</h6>
         </div>
     </div>
-
-    <!-- Video popup -->
-    <section class="popup-video">
-        <div class="modal fade-scale" id="videoPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9" id="theVideo">
-                            <iframe class="embed-responsive-item" id="popup-youtube-player" src="https://www.youtube.com/embed/Y1PVmANeyAg?autoplay=0&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" data-dismiss="modal" class="stop"><i class="fa fa-times fa-2x"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- row 1 -->
     <section class="main-content">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
-                    <!-- benefit 1 -->
-                    <div class="benefit-badge">
-                        <div class="col-sm-3">
-                            <img src="img/icon-prix.jpg">
+                <div class="col-sm-offset-1 col-sm-10 row-padding">
+                    <div class="row">
+                        <div class="col-sm-6 main-content__img">
+                            <img src="img/photos/forfaits1.jpeg">
                         </div>
-                        <div class="col-sm-9">
-                            <h3>Prix abordable</h3>
-                            <p>Un coach nutritionnel à la portée de la main pour 2$ par jour.
-                        </div>
-                    </div>
-                    <!-- benefit 2 -->
-                    <div class="benefit-badge">
-                        <div class="col-sm-push-9 col-sm-3">
-                            <img src="img/icon-personnel.jpg">
-                        </div>
-                        <div class="col-sm-pull-3 col-sm-9">
-                            <h3>Personnalisé</h3>
-                            <p>Un plan nutritionnel à votre goût, adapté à vos objectifs.
+                        <div class="col-sm-6 main-content__text">
+                            <div class="text">
+                                <h3>Inscrivez-vous.</h3>
+                                <p>Inscrivez-vous à Nutritionr et essayer notre service de coaching nutritionnel en ligne gratuitement - pendant 2 semaines complètes. On est sûr que vous aller adorer votre expérience.</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- benefit 3 -->
-                    <div class="benefit-badge">
-                        <div class="col-sm-3">
-                            <img src="img/icon-ressources.jpg">
+                    <div class="row">
+                        <div class="col-sm-push-6 col-sm-6 main-content__img">
+                            <img src="img/photos/forfaits2.jpeg">
                         </div>
-                        <div class="col-sm-9">
-                            <h3>Prêt pour vous</h3>
-                            <p>Une banque de recettes, d’entrainements et de ressources pour vous aider.
-                            </p>
+                        <div class="col-sm-pull-6 col-sm-6 main-content__text">
+                            <div class="text">
+                                <h3>Explorez la plateforme.</h3>
+                                <p>Vivez l’expérience Nutritionr de A à Z. Explorez notre plateforme simple et son contenu pour tout de suite bénéficier de notre recette vers le succès nutritionnel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 main-content__img">
+                            <img src="img/photos/forfaits1.jpeg">
+                        </div>
+                        <div class="col-sm-6 main-content__text">
+                            <div class="text">
+                                <h3>Rencontrez votre coach.</h3>
+                                <p>La personne derrère vos résultats et votre succès en nutrition sera là pour vous dès la première journée. Rencontrez votre coach à travers la plateforme qui vous convient (Skype, FaceTime, Hangouts…).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-push-6 col-sm-6 main-content__img">
+                            <img src="img/photos/forfaits2.jpeg">
+                        </div>
+                        <div class="col-sm-pull-6 col-sm-6 main-content__text">
+                            <div class="text">
+                                <h3>Progressez avec votre coach.</h3>
+                                <p>Le chemin au succès sera facilité par la relation que vous développerez avec votre coach nutritionnel. Gardez le rythme et la vous atteindrez un niveau de santé exceptionnel.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- jumbotron -->
-    <div class="jumbotron-home-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
-                    <h2>La santé vous attend.</h2>
-                    <a href="forfaits.html" class="btn btn-primary btn-lg hidden-xs">Commencer gratuitement</a>
-                </div>
-                <a href="forfaits.html" class="btn btn-primary btn-lg visible-xs"> Commencer gratuitement</a>
-            </div>
-        </div>
-    </div>
 
     <!--- footer -->
     <footer>

@@ -1,5 +1,6 @@
 /*new css May 2017*/
 
+
 body {
     background-color: #11baa1;
 }
@@ -451,3 +452,29 @@ keyframes slide-it-in {
         padding-top: 30vh;
     }
 }
+
+/*new css August 2017*/
+
+.jumbotron-forfaits {
+    min-height: 50vh;
+    background-image: url(../img/drawings/pricing-img1.svg), url(../img/drawings/pricing-img2.svg);
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 200px;
+    padding: 15px;
+    color: #111;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media (max-width: 767px) {}
