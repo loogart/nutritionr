@@ -2938,7 +2938,6 @@ keyframes slide-it-in {
 .split__right {
     background-color: #9B9B9B;
     padding: 50px 20px 20px;
-    ;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -2947,45 +2946,78 @@ keyframes slide-it-in {
 
 /* new card aka crd */
 
-.crd {}
+.crd {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all .2s ease;
+    margin-bottom: 30px;
+}
+
+.crd:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
 
 img.crd__banner {
     object-fit: cover;
     height: 100px;
     width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+img.img-card-profile {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+    justify-content: left;
+    margin-top: -30px;
 }
 
 .crd__content {
-    min-height:100px;
+    min-height: 100px;
     display: flex;
-    padding:15px;
+    padding: 0 15px 15px;
+    flex-direction: column;
 }
 
-img.img-card-profile{
-    width:120px;
-    object-fit: cover;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
-    justify-content: left;
+.crd__top {
+    display: flex;
+    flex-direction: row;
 }
 
-.crd__content .text{
+.crd__bottom {}
+
+.crd__bottom ul {
+    margin-bottom: 20px;
+}
+
+.truncate-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.crd__bottom ul.list-inline li a {
+    font-size: 16px;
+    color: #101010;
+    font-weight: normal;
+}
+
+.crd__content .text {
     justify-content: right;
-    padding:10px;
+    padding: 10px;
+    font-weight: bolder;
 }
 
-/* extra spacing css */
-
-.pt-5 {
-    padding-top: 10rem;
-}
-
-.pb-0 {
-    padding-bottom: 0;
-}
-
-.px-0 {
-    padding-left: 0;
-    padding-right: 0;
+.equipe-banner {
+    object-fit: cover;
+    height: 180px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 120px;
 }
 
 
@@ -3004,6 +3036,9 @@ img.img-card-profile{
         line-height: 4.2rem;
         color: #11baa1;
     }
+    .jumbotron-mini {
+        padding-top: 100px;
+    }
     .jumbotron-mini h2 {
         font-size: 4rem;
         line-height: 4.2rem;
@@ -3020,5 +3055,17 @@ img.img-card-profile{
     }
     .main-content__img img:hover {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    .crd {
+        width: 90%;
+        margin: 0 auto 30px;
+        ;
+    }
+    .equipe-banner {
+        object-fit: cover;
+        height: 140px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 0px;
     }
 }
