@@ -1,34 +1,23 @@
+// ScrollReveal
+window.sr = ScrollReveal({
+    reset: false,
+    distance: '50px',
+    duration: 750
+});
+sr.reveal('.bottom', {
+    origin: 'bottom',
+})
+sr.reveal('.left', {
+    origin: 'left',
+});
+sr.reveal('.right', {
+    origin: 'right',
+});
+sr.reveal('.top', {
+    origin: 'top',
+});
+
 $(document).ready(function () {
-    // ScrollReveal
-    window.sr = ScrollReveal({
-        reset: true
-    });
-    sr.reveal('.bottom', {
-        duration: 750,
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-    })
-    sr.reveal('.left', {
-        duration: 750,
-        origin: 'left',
-        distance: '50px',
-        reset: false,
-    });
-    sr.reveal('.right', {
-        duration: 750,
-        origin: 'right',
-        distance: '50px',
-        reset: false,
-    });
-    sr.reveal('.top', {
-        duration: 750,
-        origin: 'top',
-        distance: '50px',
-        reset: false,
-    });
-    //parallax fx
-    var s = skrollr.init();
     // menu mobile scrim
     $(".collapsed").click(function () {
         $('.mobile-menu-closed').toggleClass('mobile-menu-open');
