@@ -978,6 +978,50 @@ fieldset[disabled] .btn-primary-o.focus {
 }
 
 
+/*btn dark*/
+
+.btn-dark {
+    color: #fff;
+    background-color: #343434;
+    border-color: #343434;
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+    color: #fff;
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+.btn-dark:active,
+.btn-dark.active,
+.open>.dropdown-toggle.btn-dark {
+    color: #fff;
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+.btn-dark:active:hover,
+.btn-dark.active:hover,
+.open>.dropdown-toggle.btn-dark:hover,
+.btn-dark:active:focus,
+.btn-dark.active:focus,
+.open>.dropdown-toggle.btn-dark:focus,
+.btn-dark:active.focus,
+.btn-dark.active.focus,
+.open>.dropdown-toggle.btn-dark.focus {
+    color: #fff;
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+
 /* forms */
 
 .form-control {
@@ -2407,9 +2451,7 @@ body {
     line-height: 24px;
 }
 
-.jumbotron-home-2 .btn,
-.jumbotron-home-3 .btn,
-.jumbotron-forfaits .btn {
+[class^="jumbotron"] .btn {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 10px 15px 0 rgba(0, 0, 0, 0.21);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -2417,9 +2459,7 @@ body {
     padding: 15px 25px;
 }
 
-.jumbotron-home-2 .btn:hover,
-.jumbotron-home-3 .btn:hover,
-.jumbotron-forfaits .btn:hover {
+[class^="jumbotron"] .btn:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
@@ -2745,7 +2785,7 @@ keyframes slide-it-in {
 /*new css August 2017*/
 
 .jumbotron-forfaits {
-    min-height: 50vh;
+    min-height: 55vh;
     background-image: url(../img/drawings/pricing-img1.svg), url(../img/drawings/pricing-img2.svg);
     background-position: left 75%, right 75%;
     background-repeat: no-repeat, no-repeat;
@@ -2759,6 +2799,19 @@ keyframes slide-it-in {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.jumbotron-mini {
+    min-height: 15vh;
+    background-color: white;
+    color: #101010;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .jumbotron-forfaits__title {
@@ -2775,7 +2828,18 @@ keyframes slide-it-in {
     margin-bottom: 20px;
 }
 
-.jumbotron-forfaits h5 {
+.jumbotron-mini h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #101010;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.8rem;
+    margin-bottom: 10px;
+}
+
+.jumbotron-forfaits h5,
+.jumbotron-mini h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     color: #101010;
@@ -2785,7 +2849,8 @@ keyframes slide-it-in {
     margin-bottom: 30px;
 }
 
-.jumbotron-forfaits h6 {
+.jumbotron-forfaits h6,
+.jumbotron-mini h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #343434;
@@ -2800,15 +2865,8 @@ keyframes slide-it-in {
 }
 
 .main-content .row-padding .row {
-    padding-bottom: 169px;
-}
-
-.main-content h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    color: #101010;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
+    padding-top: 39px;
+    padding-bottom: 69px;
 }
 
 .main-content__img {
@@ -2829,6 +2887,7 @@ keyframes slide-it-in {
 
 .main-content__img img:hover {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
 }
 
 .main-content__text {
@@ -2838,6 +2897,18 @@ keyframes slide-it-in {
     align-items: center;
     padding: 30px;
     min-height: 360px;
+    -webkit-transform: translate3d(0, 0, 0);
+    /* removes flicked on css transition */
+}
+
+.main-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #101010;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    -webkit-transform: translate3d(0, 0, 0);
+    /* removes flicked on css transition */
 }
 
 .main-content p {
@@ -2847,6 +2918,29 @@ keyframes slide-it-in {
     font-size: 2rem;
     line-height: 2.6rem;
     margin-bottom: 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    /* removes flicked on css transition */
+}
+
+.jumbotron-split {
+    background-color: white;
+}
+
+.split__left {
+    background-color: #e5e5e5;
+    padding: 50px 20px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.split__right {
+    background-color: #9B9B9B;
+    padding: 50px 20px 20px;
+    ;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -2861,6 +2955,10 @@ keyframes slide-it-in {
         font-size: 4rem;
         line-height: 4.2rem;
         color: #11baa1;
+    }
+    .jumbotron-mini h2 {
+        font-size: 4rem;
+        line-height: 4.2rem;
     }
     .main-content .row-padding .row {
         padding-bottom: 30px;
