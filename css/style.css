@@ -2814,7 +2814,8 @@ keyframes slide-it-in {
     padding-bottom: 30px;
 }
 
-.jumbotron-forfaits__title {
+.jumbotron-forfaits__title,
+.jumbotron-mini__title {
     max-width: 70vw;
 }
 
@@ -2942,6 +2943,53 @@ keyframes slide-it-in {
     align-content: center;
     justify-content: center;
 }
+
+
+/* new card aka crd */
+
+.crd {}
+
+img.crd__banner {
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+.crd__content {
+    min-height:100px;
+    display: flex;
+    padding:15px;
+}
+
+img.img-card-profile{
+    width:120px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
+    justify-content: left;
+}
+
+.crd__content .text{
+    justify-content: right;
+    padding:10px;
+}
+
+/* extra spacing css */
+
+.pt-5 {
+    padding-top: 10rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* mobile mode baby */
 
 @media (max-width: 767px) {
     .jumbotron-forfaits {
