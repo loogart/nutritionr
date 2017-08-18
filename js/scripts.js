@@ -5,9 +5,6 @@ window.sr = ScrollReveal({
     duration: 750,
     mobile: false
 });
-sr.reveal('.bottom', {
-    origin: 'bottom',
-})
 sr.reveal('.left', {
     origin: 'left',
 });
@@ -16,6 +13,21 @@ sr.reveal('.right', {
 });
 sr.reveal('.top', {
     origin: 'top',
+});
+sr.reveal('.top-2', {
+    origin: 'top',
+    duration:250
+});
+sr.reveal('.bottom', {
+    origin: 'bottom',
+});
+sr.reveal('.bottom-2', {
+    origin: 'bottom',
+    delay:50
+});
+sr.reveal('.bottom-3', {
+    origin: 'bottom',
+    delay:100
 });
 
 $(document).ready(function () {

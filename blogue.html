@@ -34,155 +34,390 @@
 
 </head>
 
-<body>
-
-    <!-- create account modal -->
-    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="createAccount">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header visible-xs">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> Créer un compte
-                </div>
-                <div class="modal-body">
-                    <button type="button" class="btn btn-facebook btn-lg btn-block" data-dismiss="modal"><i class="fa fa-facebook-official"></i> S'inscrire avec Facebook</button>
-                    <hr class="subtle">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"><i class="fa fa-envelope-o"></i> S'inscrire par courriel</button>
-                    <p>
-                        En vous inscrivant, vous acceptez les <a href="#!" class="teal">termes et les conditions</a> de Nutritionr.
-                    </p>
-                    <hr class="subtle">
-                    <div class="row">
-                        <p class="col-xs-6">Déjà un membre de Nutritionr?</p>
-                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Connectez-vous!</a></p>
-                    </div>
-                </div>
-
+<!-- create account modal -->
+<div class="modal modal-signup fade" tabindex="-1" role="dialog" id="createAccount">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header visible-xs">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> Créer un compte
             </div>
-            <!-- /.modal-content -->
+            <div class="modal-body">
+                <button type="button" class="btn btn-facebook btn-lg btn-block" data-dismiss="modal"><i class="fa fa-facebook-official"></i> S'inscrire avec Facebook</button>
+                <hr class="subtle">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"><i class="fa fa-envelope-o"></i> S'inscrire par courriel</button>
+                <p>
+                    En vous inscrivant, vous acceptez les <a href="#!" class="teal">termes et les conditions</a> de Nutritionr.
+                </p>
+                <hr class="subtle">
+                <div class="row">
+                    <p class="col-xs-6">Déjà un membre de Nutritionr?</p>
+                    <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Connectez-vous!</a></p>
+                </div>
+            </div>
+
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal-dialog -->
+</div>
 
-    <!-- Sign In modal -->
-    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="signIn">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header visible-xs">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> Créer un compte
-                </div>
-                <div class="modal-body">
-                    <div class="form-group form-group-lg has-feedback">
-                        <input type="text" class="form-control input-lg" placeholder="Email" value="chris@loogart.com">
-                        <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
-                    </div>
-                    <div class="form-group form-group-lg has-feedback">
-                        <input type="password" class="form-control input-lg" placeholder="Password" value="niggawhutniggawho">
-                        <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
-                    </div>
-                    <a href="tableau.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-arrow-right"></i> Se connecter</a>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Rappelez-vous de moi
-                        </label>
-                    </div>
-                    <hr class="subtle">
-                    <div class="row">
-                        <p class="col-xs-12"><a href="#!" class="teal">Oublié votre mot de passe?</a></p>
-                        <p class="col-xs-6">Pas encore inscrit à Nutritionr?</p>
-                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Créer un compte</a></p>
-                    </div>
-                </div>
-
+<!-- Sign In modal -->
+<div class="modal modal-signup fade" tabindex="-1" role="dialog" id="signIn">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header visible-xs">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> Créer un compte
             </div>
-            <!-- /.modal-content -->
+            <div class="modal-body">
+                <div class="form-group form-group-lg has-feedback">
+                    <input type="text" class="form-control input-lg" placeholder="Email" value="chris@loogart.com">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div class="form-group form-group-lg has-feedback">
+                    <input type="password" class="form-control input-lg" placeholder="Password" value="niggawhutniggawho">
+                    <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <a href="tableau.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-arrow-right"></i> Se connecter</a>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Rappelez-vous de moi
+                    </label>
+                </div>
+                <hr class="subtle">
+                <div class="row">
+                    <p class="col-xs-12"><a href="#!" class="teal">Oublié votre mot de passe?</a></p>
+                    <p class="col-xs-6">Pas encore inscrit à Nutritionr?</p>
+                    <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Créer un compte</a></p>
+                </div>
+            </div>
+
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal-dialog -->
+</div>
 
-    <!-- primary navigation -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html"><span class="brand-2 slide-down"></span></a>
+<!-- primary navigation -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><span class="brand-2 slide-down"></span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="forfaits.html">Forfaits</a></li>
+                <li><a href="equipe.html">L'équipe</a></li>
+                <li class="active"><a href="blogue.html">Blogue</a></li>
+                <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- background-mobile-menu-->
+<div class="toggle-menu mobile-menu-closed"></div>
+
+<!-- jumbotron forfaits -->
+<div class="jumbotron-forfaits jumbotron-blog">
+    <div class="jumbotron-forfaits__title">
+        <h2>Nutri-lecture</h2>
+        <h5>Que vous soyez membres ou pas, notre mission est de vous donner la meilleure information qui vous aidera à faire des décisions saines sur votre nutrition. Lisez santé.</h5>
+    </div>
+</div>
+
+<!-- content -->
+<section class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <!-- blog section 1 -->
+                <div class="blog-section">
+                    <h3>Août 2017</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!-- card blog-->
+                            <div class="crd-blog">
+                                <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                <div class="crd-blog-content">
+                                    <div class="blog-tags">
+                                        <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                    </div>
+                                    <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                    <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                    <div class="author-section">
+                                        <img src="">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Laurie Cheng</a></li>
+                                            <li>9 août 2017</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- two row column -->
+                            <div class="two-row-col">
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- two row column -->
+                            <div class="two-row-col">
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. </p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. </p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog section 1 -->
+                <div class="blog-section">
+                    <h3>Juillet 2017</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!-- two row column -->
+                            <div class="two-row-col">
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- two row column -->
+                            <div class="two-row-col">
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. </p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card blog-->
+                                <div class="crd-blog">
+                                    <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                    <div class="crd-blog-content">
+                                        <div class="blog-tags">
+                                            <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                        </div>
+                                        <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                        <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. </p>
+                                        <div class="author-section">
+                                            <img src="">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#!">Laurie Cheng</a></li>
+                                                <li>9 août 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- card blog-->
+                            <div class="crd-blog">
+                                <a href="#!"><img src="https://s3.amazonaws.com/resource-photos/assets/thumb_5989d2a4ada120.33541602.jpg"></a>
+                                <div class="crd-blog-content">
+                                    <div class="blog-tags">
+                                        <h6><i class="fa fa-tag" aria-hidden="true"></i> <a href="#!">Blogue</a>, <a href="#!">Végétarien</a></h6>
+                                    </div>
+                                    <h4><a href="#!">C’est la mode - Flirter avec la sobriété</a></h4>
+                                    <p>Ils échangent leur tequila contre un « wellness shot » et choisissent pleine conscience dans la liste des cocktails. La dernière année aura été celle de la montée de la sobriété, non pas comme conséquence à un problème de consommation, mais plutôt comme une décision bien assumée. Cette semaine, Nutritionr explore cette nouvelle mode et vous propose quelques idées pour l’essayer!</p>
+                                    <div class="author-section">
+                                        <img src="">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">Laurie Cheng</a></li>
+                                            <li>9 août 2017</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-nav-link">
+                    <a class="blog-link text-left teal" href="equipe.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Mois précédents</a>
+                    <a class="blog-link text-right teal" href="equipe.html">Mois suivants <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="forfaits.html">Forfaits</a></li>
-                    <li><a href="equipe.html">L'équipe</a></li>
-                    <li class="active"><a href="blogue.html">Blogue</a></li>
-                    <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
+<!--- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-offset-2 col-md-2">
+                <p class="teal">Compagnie</p>
+                <ul class="list-unstyled">
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Carrières</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Termes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Clients</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-    <!-- background-mobile-menu-->
-    <div class="toggle-menu mobile-menu-closed"></div>
-
-
-
-    <!--- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-md-offset-2 col-md-2">
-                    <p class="teal">Compagnie</p>
-                    <ul class="list-unstyled">
-                        <li><a href="#">À propos</a></li>
-                        <li><a href="#">Carrières</a></li>
-                        <li><a href="#">Aide</a></li>
-                        <li><a href="#">Termes</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Clients</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-md-2">
-                    <p class="teal">Coachs</p>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Devenir coach</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Certifications</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-md-2">
-                    <p class="teal">Connecter</p>
-                    <ul class="list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-md-2">
-                    <p class="teal">Langue</p>
-                    <div class="select-styled">
-                        <select class="form-control">
-                            <option>Français</option>
-                            <option>Anglais</option>
-                            <option>Arabe</option>
-                        </select>
-                    </div>
+            <div class="col-sm-3 col-md-2">
+                <p class="teal">Coachs</p>
+                <ul class="list-unstyled">
+                    <li><a href="#">Devenir coach</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Certifications</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <p class="teal">Connecter</p>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <p class="teal">Langue</p>
+                <div class="select-styled">
+                    <select class="form-control">
+                        <option>Français</option>
+                        <option>Anglais</option>
+                        <option>Arabe</option>
+                    </select>
                 </div>
             </div>
         </div>
+    </div>
 
 
-    </footer>
+</footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 
 </html>

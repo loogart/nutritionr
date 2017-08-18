@@ -2451,7 +2451,11 @@ body {
     line-height: 24px;
 }
 
-[class^="jumbotron"] .btn {
+
+/* ###buttons aug 2017 */
+
+[class^="jumbotron"] .btn,
+[class^="profile"] .btn {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 10px 15px 0 rgba(0, 0, 0, 0.21);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -2459,7 +2463,8 @@ body {
     padding: 15px 25px;
 }
 
-[class^="jumbotron"] .btn:hover {
+[class^="jumbotron"] .btn:hover,
+[class^="profile"] .btn:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
@@ -2801,6 +2806,14 @@ keyframes slide-it-in {
     text-align: center;
 }
 
+.jumbotron-blog {
+    background-image: url(../img/drawings/blog-img1.svg), url(../img/drawings/blog-img2.svg);
+    background-position: left 75%, right 75%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 160px, 160px;
+    padding: 80px 15px 0;
+}
+
 .jumbotron-mini {
     min-height: 15vh;
     background-color: white;
@@ -2973,6 +2986,8 @@ img.img-card-profile {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
     justify-content: left;
     margin-top: -30px;
+    margin-right: 10px;
+    border: 6px solid #fff;
 }
 
 .crd__content {
@@ -2987,7 +3002,10 @@ img.img-card-profile {
     flex-direction: row;
 }
 
-.crd__bottom {}
+.crd__bottom {
+    padding-left:10px;
+    padding-right: 10px;
+}
 
 .crd__bottom ul {
     margin-bottom: 20px;
@@ -3010,6 +3028,14 @@ img.img-card-profile {
     justify-content: right;
     padding: 10px;
     font-weight: bolder;
+}
+
+.crd__content h3 {
+    line-height: 2.8rem;
+}
+
+.crd__content h4 {
+    line-height: 2.2rem;
 }
 
 .equipe-banner {
@@ -3075,17 +3101,125 @@ a.retour-equipe {
     color: #11baa1;
     font-weight: bolder;
     font-size: 6rem;
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 .profile-stats p {
     font-weight: 100;
 }
 
-.stat{
+.stat {
     margin: 0 15px;
     flex: 1;
     align-self: flex-start;
+}
+
+.blog-section hr {
+    margin-bottom: 20px;
+}
+
+.two-row-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.crd-blog {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all .2s ease;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .07);
+    margin-bottom: 15px;
+}
+
+.crd-blog:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .07);
+}
+
+.crd-blog img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.two-row-col img {
+    height: 100px;
+}
+
+.two-row-col .crd-blog-content p {
+    display: none;
+}
+
+.crd-blog-content {
+    padding: 20px;
+}
+
+.blog-tags h6,
+.blog-tags a {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: #ccc!important;
+    margin-top: 0;
+}
+
+.crd-blog-content h4 a {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+    color: #101010;
+}
+
+.crd-blog-content h4 a:hover {
+    text-decoration: none;
+}
+
+.crd-blog-content p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #9b9b9b;
+    font-weight: normal;
+    margin: 15px auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.author-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-section img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    margin-right: 20px
+}
+
+.author-section ul.list-unstyled li {
+    font-size: 1.1rem;
+    color: #9b9b9b;
+}
+
+.author-section ul.list-unstyled li a {
+    color: #4a4a4a;
+}
+
+.blog-nav-link {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+a.blog-link {
+    font-size: 1.6rem;
+    flex-grow: 1;
 }
 
 
@@ -3099,10 +3233,23 @@ a.retour-equipe {
         background-size: 120px;
         padding-top: 159px;
     }
+    .jumbotron-blog {
+        background-image: url(../img/drawings/blog-img1.svg);
+        background-position: 44% 69px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 120px;
+        padding-top: 159px;
+    }
     .jumbotron-forfaits h2 {
         font-size: 4rem;
         line-height: 4.2rem;
         color: #11baa1;
+        padding-top: 30px;
+    }
+    .jumbotron-blog h2 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        color: #101010;
     }
     .jumbotron-mini {
         padding-top: 100px;
@@ -3127,6 +3274,20 @@ a.retour-equipe {
     .crd {
         width: 90%;
         margin: 0 auto 30px;
+    }
+    img.img-card-profile {
+        width: 150px;
+        height: 150px;
+        margin-top:-50px;
+    }
+    .crd__top {
+        display: flex;
+        flex-direction: column;
+    }
+    .crd__top h3 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin-top:10px;
     }
     .equipe-banner {
         object-fit: cover;
@@ -3165,5 +3326,9 @@ a.retour-equipe {
     .profile-stats {
         display: flex;
         flex-direction: column;
+    }
+    .crd-blog {
+        max-width: 90%;
+        margin: 0 auto 15px;
     }
 }
