@@ -2,7 +2,8 @@
 window.sr = ScrollReveal({
     reset: false,
     distance: '50px',
-    duration: 750
+    duration: 750,
+    mobile: false
 });
 sr.reveal('.bottom', {
     origin: 'bottom',

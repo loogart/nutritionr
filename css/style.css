@@ -2808,6 +2808,7 @@ keyframes slide-it-in {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -2847,7 +2848,6 @@ keyframes slide-it-in {
     font-size: 2rem;
     line-height: 2.6rem;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .jumbotron-forfaits h6,
@@ -2862,7 +2862,7 @@ keyframes slide-it-in {
 
 .main-content {
     background-color: #fff;
-    padding: 60px 15px;
+    padding: 15px 15px 60px;
 }
 
 .main-content .row-padding .row {
@@ -3013,11 +3013,79 @@ img.img-card-profile {
 }
 
 .equipe-banner {
-    object-fit: cover;
-    height: 180px;
+    object-fit: contain;
+    min-height: 140px;
     max-width: 100%;
     margin: auto;
     margin-top: 120px;
+}
+
+.profile-banner img {
+    height: 321px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+}
+
+img.img-page-profile {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+    justify-content: left;
+    margin-top: -120px;
+    border: 9px solid #fff;
+}
+
+a.retour-equipe {
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.profile-content h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #101010;
+}
+
+.profile-content h3 {
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.profile-content p {
+    font-weight: normal;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    color: #101010;
+    margin: 40px auto;
+}
+
+.profile-stats h4 {
+    color: #11baa1;
+    font-weight: bolder;
+    font-size: 6rem;
+    margin:20px auto;
+}
+
+.profile-stats p {
+    font-weight: 100;
+}
+
+.stat{
+    margin: 0 15px;
+    flex: 1;
+    align-self: flex-start;
 }
 
 
@@ -3059,7 +3127,6 @@ img.img-card-profile {
     .crd {
         width: 90%;
         margin: 0 auto 30px;
-        ;
     }
     .equipe-banner {
         object-fit: cover;
@@ -3067,5 +3134,36 @@ img.img-card-profile {
         max-width: 100%;
         margin: auto;
         margin-top: 0px;
+    }
+    .profile-banner img {
+        height: 222px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    img.img-page-profile {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+        justify-content: center;
+        border: 9px solid #fff;
+        margin: auto;
+        margin-top: -120px;
+    }
+    a.retour-equipe {
+        font-size: 20px;
+        position: static;
+        margin: auto;
+        margin: 20px auto;
+    }
+    .profile-stats {
+        display: flex;
+        flex-direction: column;
     }
 }
