@@ -3003,7 +3003,7 @@ img.img-card-profile {
 }
 
 .crd__bottom {
-    padding-left:10px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -3130,12 +3130,14 @@ a.retour-equipe {
     background-color: #fff;
     border-radius: 6px;
     transition: all .2s ease;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .07);
+    box-shadow: none;
     margin-bottom: 15px;
+    transition: all .2 ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
 }
 
 .crd-blog:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .07);
+    box-shadow: none;
 }
 
 .crd-blog img {
@@ -3144,6 +3146,7 @@ a.retour-equipe {
     object-fit: cover;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    background-color:#dcdcdc;
 }
 
 .two-row-col img {
@@ -3222,19 +3225,40 @@ a.blog-link {
     flex-grow: 1;
 }
 
-.sticky-action-box{
+.sticky-action-box {
     position: fixed;
-    display: block;
-    bottom:20px;
+    display: flex;
+    flex-direction: column;
+    bottom: -320px;
     right: 20px;
-    min-height:69px;
-    width:320px;
-    background-color:#fff;
+    min-height: 69px;
+    width: 320px;
+    background-color: #101010;
     border-radius: 6px;
-    color:#eee;
-    border:1px solid #eee;
-    box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .3);
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 750ms all ease;
+    text-align: center;
 }
+
+.sticky-action-box h4 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.sticky-action-box p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
 
 /* mobile mode baby */
 
@@ -3291,7 +3315,7 @@ a.blog-link {
     img.img-card-profile {
         width: 150px;
         height: 150px;
-        margin-top:-50px;
+        margin-top: -50px;
     }
     .crd__top {
         display: flex;
@@ -3300,7 +3324,7 @@ a.blog-link {
     .crd__top h3 {
         font-size: 3rem;
         line-height: 3.2rem;
-        margin-top:10px;
+        margin-top: 10px;
     }
     .equipe-banner {
         object-fit: cover;
@@ -3343,5 +3367,11 @@ a.blog-link {
     .crd-blog {
         max-width: 90%;
         margin: 0 auto 15px;
+    }
+    .sticky-action-box {
+        display: none;
+    }
+    footer {
+        display: none;
     }
 }

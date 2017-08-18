@@ -16,18 +16,26 @@ sr.reveal('.top', {
 });
 sr.reveal('.top-2', {
     origin: 'top',
-    duration:250
+    duration: 250
 });
 sr.reveal('.bottom', {
     origin: 'bottom',
 });
 sr.reveal('.bottom-2', {
     origin: 'bottom',
-    delay:50
+    delay: 50
 });
 sr.reveal('.bottom-3', {
     origin: 'bottom',
-    delay:100
+    delay: 100
+});
+
+//scrollr
+skrollr.init({
+    mobileCheck: function () {
+        //hack - forces mobile version to be off
+        return false;
+    }
 });
 
 $(document).ready(function () {
