@@ -3222,6 +3222,19 @@ a.blog-link {
     flex-grow: 1;
 }
 
+.sticky-action-box{
+    position: fixed;
+    display: block;
+    bottom:20px;
+    right: 20px;
+    min-height:69px;
+    width:320px;
+    background-color:#fff;
+    border-radius: 6px;
+    color:#eee;
+    border:1px solid #eee;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+}
 
 /* mobile mode baby */
 
