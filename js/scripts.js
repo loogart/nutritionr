@@ -30,14 +30,6 @@ sr.reveal('.bottom-3', {
     delay: 100
 });
 
-//scrollr
-skrollr.init({
-    mobileCheck: function () {
-        //hack - forces mobile version to be off
-        return false;
-    }
-});
-
 $(document).ready(function () {
     // menu mobile scrim
     $(".collapsed").click(function () {
