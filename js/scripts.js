@@ -30,6 +30,8 @@ sr.reveal('.bottom-3', {
     delay: 100
 });
 
+var s = skrollr.init();
+
 $(document).ready(function () {
     // menu mobile scrim
     $(".collapsed").click(function () {
