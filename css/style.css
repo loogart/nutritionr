@@ -3265,6 +3265,18 @@ a.blog-link {
     opacity:1;
 }
 
+a.close-box{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:#777;
+    transition: all .2s ease;
+}
+
+a.close-box:hover {
+    color:#ddd;
+}
+
 /* mobile mode baby */
 
 @media (max-width: 767px) {

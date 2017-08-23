@@ -47,18 +47,13 @@ $(document).ready(function () {
         $('.respond').toggleClass('hidden-xs visible-xs');
     });
 
-    //sticky box for sign up
-    var limit1 = $(window).height()/4;
-    $(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        if (scrollVal > limit1) {
-            $('.sticky-action-box').addClass('action-box');
-        } else {
-            $('.sticky-action-box').removeClass('action-box');
-        }
-    });
-    $(window).resize(function () {
-        limit1 = $(window).height();
+    //sticky box appears for sign up
+    setTimeout(function () {
+        $('.sticky-action-box').addClass('action-box');    }, 5000);
+
+    //close sticky box
+    $(".close-box").click(function () {
+        $('.sticky-action-box').removeClass('action-box');
     });
 
     // Stop Youtube video on modal close -- Finds all iframes from youtubes and gives them a unique class
