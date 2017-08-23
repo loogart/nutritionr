@@ -3243,6 +3243,7 @@ a.blog-link {
     z-index: 1;
     transition: 750ms all ease;
     text-align: center;
+    opacity:0;
 }
 
 .sticky-action-box h4 {
@@ -3259,6 +3260,10 @@ a.blog-link {
     margin-bottom: 20px;
 }
 
+.action-box{
+    bottom:20px;
+    opacity:1;
+}
 
 /* mobile mode baby */
 
