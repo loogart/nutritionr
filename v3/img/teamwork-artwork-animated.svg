@@ -1,44 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-    <title>Nutritionr</title>
-    <style>
-        .path-abc {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: dash 5s linear alternate infinite;
-        }
-
-        @keyframes dash {
-            from {
-                stroke-dashoffset: 1000;
-            }
-
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-
-    </style>
-</head>
-
-<body style="background-color: #242424;color:#fff;">
-    <div class="container py-5">
-        <img class="mb-4" src="./img/logo-full-teal.svg" style="width:10rem;">
-        <h2 class="font-weight-bold">Version 3 in development</h2>
-        <a href="../index.html" style="color:#11BAA1"><i class="fas fa-arrow-left"></i> Back to versions</a>
-    </div>
-<!--    <img style="width:100%" src="img/teamwork-artwork-animated.svg">-->
-<svg width="100%" viewBox="0 0 1024 312" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="312px" viewBox="0 0 1024 312" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
     <title>teamwork-artwork</title>
     <desc>Created with Sketch.</desc>
@@ -48,13 +9,3 @@
         </g>
     </g>
 </svg>
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
-</body>
-
-</html>
