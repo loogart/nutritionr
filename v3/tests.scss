@@ -1,0 +1,65 @@
+// add BS variables overrides BEFORE BS defaults
+$blue: green;
+
+//add a colour to theme colour map, add new spacer to spacer map
+$theme-colors: ("yellow-mellow":#f5e416, //new colour added
+"primary":#014301 // colour modified
+);
+$spacers:("10": 20px); // new spacer added
+
+// global enable disable styles
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-grid-classes: true;
+
+
+//Import
+@import "scss/bootstrap.scss";
+
+//functions come after BS files e.g. change colours
+.site-header {
+    background-color: theme-color('yellow-mellow') !important;
+
+    a {
+        color: color('teal') !important;
+    }
+
+    border-bottom: 12px solid gray('500');
+}
+
+.main-cta {
+    background-color: theme-color-level('primary', -3) !important; //theme color levels used to vary interval / hue level of color
+    color: color-yiq(theme-color('primary')); //contrast color function YIQ
+}
+
+//edit BS components = easy
+.btn {
+    border-width: 5px;
+}
+
+//how to add NEW BS components that take advantage of BS SASS
+
+.demo-component {
+    border: 1px solid;
+    border-top-width: 5px;
+    display: inline-block;
+    padding: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+@mixin demo-component-variant ($border, $color) {
+    color: theme-color($color);
+    border-color: $border;
+    //    background-color:color-yiq(theme-color($color));
+    background-color: theme-color('yellow-mellow');
+}
+
+@each $color,
+$value in $theme-colors {
+    .demo-component-#{$color} {
+        @include demo-component-variant(theme-color-level($color, -5), $color);
+    }
+}
