@@ -2,12 +2,71 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900');
 
 // Bootstrap Variables Overrides
-$font-family-sans-serif: 'Nunito Sans', sans-serif;
+$font-family-sans-serif: 'Nunito Sans',
+sans-serif;
 
 // Add or Edit Bootstrap Map
+$theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424);
+
+$colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424);
+
+$spacers:("10": 20px);
 
 // Import defaults Bootstrap styles
 @import "scss/bootstrap.scss";
 
-// New Components and Functions / Mixins
+// New variables
+$turquoise: #11BAA1;
+$jaurange: #F6921E;
+$jaune: #F7CE5B;
+$gris: #414042;
+$noir: #242424;
 
+// New Components,  and Functions / Nesting and Mixins
+.navbar-light {
+
+    .navbar-nav {
+        @media(min-width: 768px) {
+            li.nav-item {
+                margin: auto 0.5rem;
+            }
+        }
+
+        .nav-link {
+            color: $noir;
+
+            @include hover-focus {
+                color: $turquoise;
+                transition: all 0.25s ease;
+            }
+
+            &.disabled {
+                color: $gris;
+            }
+        }
+
+        .show > .nav-link,
+        .active > .nav-link,
+        .nav-link.show,
+        .nav-link.active {
+            color: $turquoise;
+        }
+    }
+
+    .navbar-toggler {
+        color: $noir;
+        border-color: transparent;
+    }
+
+    .navbar-text {
+        color: $noir;
+
+        a {
+            color: $noir;
+
+            @include hover-focus {
+                color: $turquoise;
+            }
+        }
+    }
+}
