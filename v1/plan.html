@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="teal"><i class="fa fa-bars"></i> MENU</span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#" data-toggle="modal" data-target="#filters"><i class="fa fa-sliders"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifications <span class="badge red-bg">4</span></a>
+                        </a>
+                        <ul class="dropdown-menu notifications-menu" role="menu">
+                            <li class="header">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-bars"></i> Voir toutes les notifications"</p>
+                                </a>
+                            </li>
+                            <li class="unread">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Bonjour Mary, continue à..."</p>
+                                    <p>22 août, 2016 à 15:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mary 
+                        <span class="img-profile" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Modifier votre profil</a></li>
+                            <li><a href="#">Vos paramètres</a></li>
+                            <li><a href="#">Contacter mon coach</a></li>
+                            <li><a href="#">Ajouter à mon desktop</a></li>
+                            <li><a href="#" class="red">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                    <li><a href="notifications.html">Notifications <span class="badge red-bg">4</span></a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Modifier votre profil</a></li>
+                    <li><a href="#">Vos paramètres</a></li>
+                    <li><a href="#">Contacter mon coach</a></li>
+                    <li><a href="#">Ajouter à mon desktop</a></li>
+                    <li><a href="#" class="red">Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+    <!-- secondary navigation -->
+    <div id="affix1" class="subnav" data-spy="affix" data-offset-top="60">
+        <ul class="list-inline">
+            <li>
+                <a href="tableau.html">
+                    <span class="visible-xs"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><p>Tableau</p></span>
+                    <span class="hidden-xs"> Tableau de bord</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="plan.html">
+                    <span class="visible-xs"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><br><p>Plan</p></span>
+                    <span class="hidden-xs"> Mon plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="journal.html">
+                    <span class="visible-xs"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><br><p>Journal</p></span>
+                    <span class="hidden-xs"> Mon journal</span>
+                </a>
+            </li>
+            <li>
+                <a href="profil.html">
+                    <span class="visible-xs"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><p>Profil</p></span>
+                    <span class="hidden-xs"> Mon profil</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <span class="visible-xs"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br><p>Resources</p></span>
+                    <span class="hidden-xs"> Resources</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- filter system -->
+    <div class="modal" id="filters" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="filter-modal">
+            <!--<p>Mode entraînement</p>
+            <input class="training" type="checkbox" name="my-checkbox" checked>
+            <hr class="subtle">-->
+            <p>Moment de la semaine</p>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Semaine
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Fin de semaine
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Entraînement
+                </label>
+            </div>
+            <hr class="subtle">
+            <a class="btn btn-primary btn-block" href="#" data-toggle="modal" data-target="#filters"><i class="fa fa-check"></i> Mettre à jour</a>
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE: toggle mode -->
+    <!--<div class="modal slide-in" id="toggleMode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="toggle-modal">
+            <div class="card-content">
+                <p>Entraînement?</p>
+                <input type="checkbox" name="my-checkbox" checked>
+            </div>
+        </div>
+    </div>-->
+
+
+    <!-- MOBILE: coach mobile -->
+    <!--<a class="btn btn-default teal btn-block btn-coach-mobile-full visible-xs" data-toggle="modal" data-target="#mobileCoach"><i class="fa fa-phone" aria-hidden="true"></i> Contacter mon coach</a>-->
+
+    <!-- Mobile coach -->
+    <div class="modal fade" id="mobileCoach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="card" id="affix2" data-spy="affix" data-offset-top="60">
+                <div class="profile-photo sircharles"></div>
+                <div class="card-content text-center">
+                    <h2>Charles</h2>
+                    <p>Ton coach Nutritionr. </p>
+                    <hr>
+                    <a class="btn btn-primary btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Contacter</a>
+                    <a class="btn btn-warning btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Référer</a>
+                    <a class="btn btn-primary-o btn-block" href="#" data-toggle="modal" data-target="#socialMedia"><i class="fa fa-thumbs-up"></i> Connecter</a>
+                    <a type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE: toggle mode -->
+    <!--<a class="btn btn-default teal btn-lg btn-block btn-publish-mobile visible-xs" data-toggle="modal" data-target="#toggleMode"><i class="fa fa-toggle-on" aria-hidden="true"></i> Changer mode du plan</a>-->
+
+    <!-- content-->
+    <div class="container container-1">
+        <div class="row">
+            <div class="col-sm-4 col-md-offset-1 col-md-4 hidden-xs">
+                <div class="card-coach">
+                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Commentaires du coach</h5>
+                        <p>"Bravo Mary! Continue ton entraînement intensif et ta nutrition saine. On voit déjà de grosses différences avec ton statut initial!" - Charles</p>
+                    </div>
+                </div>
+                <div id="affix2" class="card-coach" data-spy="affix" data-offset-top="60" data-offset-bottom="336">
+                    <div class="profile-photo sircharles"></div>
+                    <div class="card-content text-center">
+                        <h2>Charles</h2>
+                        <p>Ton coach Nutritionr. </p>
+                        <hr>
+                        <a class="btn btn-primary btn-block" href="#"><i class="fa fa-envelope"></i> Contacter</a>
+                        <a class="btn btn-warning btn-block" href="#"><i class="fa fa-envelope"></i> Référer</a>
+                        <a class="btn btn-primary-o btn-block" href="#" data-toggle="modal" data-target="#socialMedia"><i class="fa fa-thumbs-up"></i> Connecter</a>
+                    </div>
+                </div>
+                <!--<div class="toggle-mode text-center" id="affix3" data-spy="affix" data-offset-top="60" data-offset-bottom="286">
+                    <input type="checkbox" name="my-checkbox" checked>
+                </div>-->
+            </div>
+
+            <div class="col-sm-8 col-md-6">
+                <!-- Nav tabs -->
+                <ul id="affix4" class="nav nav-tabs nav-justified nav-justified-mobile-half hidden-xs" role="tablist" data-spy="affix" data-offset-top="60" data-offset-bottom="336">
+                    <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Semaine</a></li>
+                    <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Fin de semaine</a></li>
+                    <li role="presentation"><a href="#tab3" aria-controls="profile" role="tab" data-toggle="tab">Entraînement</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <div class="card-coach visible-xs">
+                            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>Commentaires du coach</h5>
+                                <p>"Bravo Mary! Continue ton entraînement intensif et ta nutrition saine. On voit déjà de grosses différences avec ton statut initial!" - Charles</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h3>Macronutrition</h3>
+                                <p>La macronutrition est l’analyse de l’apport en protéines, en glucides et en lipides provenant de l’alimentation. </p>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéines</td>
+                                                <td>100g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucides</td>
+                                                <td>160g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipides</td>
+                                                <td>30g</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Ton entraînement</h3>
+                                <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#workout">Voir entraînement</a>
+                            </div>
+                        </div>
+
+                        <!-- modal recipe -->
+                        <div class="modal fade" tabindex="-1" role="dialog" id="recipe">
+                            <div class="modal-dialog" role="document">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/home.jpg')"></div>
+                                    <div class="card-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h3>Tisane anti-oxidante</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque distinctio, nihil omnis.</p>
+                                        <hr class="subtle">
+                                        <!-- ingredients -->
+                                        <h4 class="teal">Igrédients</h4>
+                                        <ul>
+                                            <li>Cras justo odio</li>
+                                            <li>Dapibus ac facilisis in</li>
+                                            <li>Morbi leo risus</li>
+                                            <li>Porta ac consectetur ac</li>
+                                            <li>Vestibulum at eros</li>
+                                        </ul>
+                                        <hr class="subtle">
+                                        <!-- instructions -->
+                                        <h4 class="teal">Instructions</h4>
+                                        <ol>
+                                            <li>Cras justo odio</li>
+                                            <li>Dapibus ac facilisis in</li>
+                                            <li>Morbi leo risus</li>
+                                            <li>Porta ac consectetur ac</li>
+                                            <li>Vestibulum at eros</li>
+                                        </ol>
+                                        <hr class="subtle">
+                                        <a href="#!" class="btn btn-default btn-block" data-dismiss="modal"><i class="fa fa-times"></i> Fermer cette fenêtre</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+
+                        <!-- modal workout -->
+                        <div class="modal fade" tabindex="-1" role="dialog" id="workout">
+                            <div class="modal-dialog" role="document">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                                    <div class="card-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h3>Ton entraînement</h3>
+                                        <div class="panel panel-default">
+                                            <!-- Table -->
+                                            <table class="table">
+                                                <tr>
+                                                    <td rowspan="4">Jour 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise A</td>
+                                                    <td>15 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>15 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise B</td>
+                                                    <td>25 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>10 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise C</td>
+                                                    <td>20 Reps</td>
+                                                    <td>4 sets</td>
+                                                    <td>5 lbs</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td rowspan="4">Jour 2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise D</td>
+                                                    <td>25 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>30 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise E</td>
+                                                    <td>20 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>15 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise F</td>
+                                                    <td>10 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>35 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="4">Jour 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise G</td>
+                                                    <td>30 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>5 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise H</td>
+                                                    <td>25 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>15 lbs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exercise I</td>
+                                                    <td>5 Reps</td>
+                                                    <td>3 sets</td>
+                                                    <td>45 lbs</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <hr class="subtle">
+                                        <a href="#!" class="btn btn-default btn-block" data-dismiss="modal"><i class="fa fa-times"></i> Fermer cette fenêtre</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+
+
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au lever</h3>
+                                <p>Choisir un exemple de repas à préparer.</p>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Exemple de repas 1</td>
+                                                <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Tisane anti-oxidante</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exemple de repas 2</td>
+                                                <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Boisson just orange</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exemple de repas 3</td>
+                                                <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Lait au caramel</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Macronutrition: Protéine: 10g | Lipide: 5g | Glucide: 20g</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au déjeuner</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>20g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipide</td>
+                                                <td>20g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucides</td>
+                                                <td>13g</td </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Repas suggéré: 1/4 portion de <a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Le gentil bûcheron</a></h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-diner.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Dîner</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>20g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipide</td>
+                                                <td>20g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucides</td>
+                                                <td>13g</td </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Repas suggéré: 1 portion de <a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Le burger invisible</a></h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-collation.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Collation</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>11g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipide</td>
+                                                <td>15g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucides</td>
+                                                <td>12g</td </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Repas suggéré: 1 portion de <a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Le quickie</a></h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-intra.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Intra-entraînement</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>25g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Repas suggéré: 1/2 portion de <a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Le jus formidable</a></h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-souper.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au souper</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>30g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipide</td>
+                                                <td>9g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucides</td>
+                                                <td>8g</td </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6><i class="fa fa-angle-right"></i> Repas suggéré: 1 portion de <a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Le dernier repas</a></h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au déjeuner</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>25g de poudre de protéine</td>
+                                                <td>20g protéines</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lipide</td>
+                                                <td>Vinagire de cidre de pomme ou balsamique (1 c. à table)</td>
+                                                <td>20g lipides</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Légume</td>
+                                                <td>Café ou thé</td>
+                                                <td>n/a</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-intra.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Intra-entraînement</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>1 portion de whey ou bcaa</td>
+                                                <td>25g protéines</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-souper.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au souper</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>4oz de saumon</td>
+                                                <td>30g protéines</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucide</td>
+                                                <td>1 tasse de riz blanc cuit + 2 morceaux de chocolat 70%</td>
+                                                <td>60-70g glucides / 8g lipides</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Légume</td>
+                                                <td>Au moins 1 portion de légumes à tous les repas</td>
+                                                <td>n/a</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-intra.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Intra-entraînement</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>1 portion de whey ou bcaa</td>
+                                                <td>25g protéines</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/meal-souper.jpg')"></div>
+                            <div class="card-content">
+                                <h3>Au souper</h3>
+                                <div class="panel panel-default">
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Protéine</td>
+                                                <td>4oz de saumon</td>
+                                                <td>30g protéines</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glucide</td>
+                                                <td>1 tasse de riz blanc cuit + 2 morceaux de chocolat 70%</td>
+                                                <td>60-70g glucides / 8g lipides</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Légume</td>
+                                                <td>Au moins 1 portion de légumes à tous les repas</td>
+                                                <td>n/a</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- footer -->
+    <footer>
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/bootstrap-switch.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $("[name='my-checkbox']").bootstrapSwitch({
+                onText: 'Entraînement',
+                offText: 'Repos',
+                onColor: 'primary',
+                state: false,
+            });
+            $(".weekday").bootstrapSwitch({
+                onText: 'Semaine',
+                offText: 'Fin de sem.',
+                onColor: 'info',
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="teal"><i class="fa fa-bars"></i> MENU</span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#" data-toggle="modal" data-target="#mobileCoach"><i class="fa fa-phone"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifications <span class="badge red-bg">4</span></a>
+                        </a>
+                        <ul class="dropdown-menu notifications-menu" role="menu">
+                            <li class="header">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-bars"></i> Voir toutes les notifications"</p>
+                                </a>
+                            </li>
+                            <li class="unread">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Bonjour Mary, continue à..."</p>
+                                    <p>22 août, 2016 à 15:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mary 
+                        <span class="img-profile" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Modifier votre profil</a></li>
+                            <li><a href="#">Vos paramètres</a></li>
+                            <li><a href="#">Contacter mon coach</a></li>
+                            <li><a href="#">Ajouter à mon desktop</a></li>
+                            <li><a href="#" class="red">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                    <li><a href="notifications.html">Notifications <span class="badge red-bg">4</span></a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Modifier votre profil</a></li>
+                    <li><a href="#">Vos paramètres</a></li>
+                    <li><a href="#">Contacter mon coach</a></li>
+                    <li><a href="#">Ajouter à mon desktop</a></li>
+                    <li><a href="#" class="red">Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+    <!-- Mobile coach -->
+    <div class="modal fade" id="mobileCoach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="card" id="affix2" data-spy="affix" data-offset-top="60">
+                <div class="profile-photo sircharles"></div>
+                <div class="card-content text-center">
+                    <h2>Charles</h2>
+                    <p>Ton coach Nutritionr. </p>
+                    <hr>
+                    <a class="btn btn-primary btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Contacter</a>
+                    <a class="btn btn-warning btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Référer</a>
+                    <a class="btn btn-primary-o btn-block" href="#" data-toggle="modal" data-target="#socialMedia"><i class="fa fa-thumbs-up"></i> Connecter</a>
+                    <a type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- secondary navigation -->
+    <div id="affix1" class="subnav" data-spy="affix" data-offset-top="60">
+        <ul class="list-inline">
+            <li>
+                <a href="tableau.html">
+                    <span class="visible-xs"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><p>Tableau</p></span>
+                    <span class="hidden-xs"> Tableau de bord</span>
+                </a>
+            </li>
+            <li>
+                <a href="plan.html">
+                    <span class="visible-xs"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><br><p>Plan</p></span>
+                    <span class="hidden-xs"> Mon plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="journal.html">
+                    <span class="visible-xs"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><br><p>Journal</p></span>
+                    <span class="hidden-xs"> Mon journal</span>
+                </a>
+            </li>
+            <li>
+                <a href="profil.html">
+                    <span class="visible-xs"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><p>Profil</p></span>
+                    <span class="hidden-xs"> Mon profil</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="resources.html">
+                    <span class="visible-xs"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br><p>Resources</p></span>
+                    <span class="hidden-xs"> Resources</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- content -->
+    <div class="container container-1">
+        <div class="row">
+            <div class="col-sm-4 col-md-offset-1 col-md-4 hidden-xs">
+                <div id="affix2" data-spy="affix" data-offset-top="60" data-offset-bottom="336">
+                    <div class="card-content">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Leçons</a></li>
+                            <li role="presentation"><a href="#tab2" aria-controls="tab3" role="tab" data-toggle="tab">Recettes</a></li>
+                            <li role="presentation"><a href="#tab3" aria-controls="tab2" role="tab" data-toggle="tab">Vidéos</a></li>
+                        </ul>
+                        <!-- nav pills stacked with javascript toggles -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6">
+
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-6 -->
+
+                <!-- cards for videos, lesssons etc... -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/food1.jpeg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #1</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/food2.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #1</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/exercise.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #2</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/food3.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #3</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #4</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #5</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/exercise.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #2</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/food3.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #3</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #4</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #5</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/food3.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #96</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #4</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                                    <div class="card-content">
+                                        <h4>Lesson #69</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a class="teal" href="article.html">Visionner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--- footer -->
+    <footer>
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="teal"><i class="fa fa-bars"></i> MENU</span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#" data-toggle="modal" data-target="#mobileCoach"><i class="fa fa-phone"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifications <span class="badge red-bg">4</span></a>
+                        </a>
+                        <ul class="dropdown-menu notifications-menu" role="menu">
+                            <li class="header">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-bars"></i> Voir toutes les notifications"</p>
+                                </a>
+                            </li>
+                            <li class="unread">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Bonjour Mary, continue à..."</p>
+                                    <p>22 août, 2016 à 15:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mary 
+                        <span class="img-profile" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Modifier votre profil</a></li>
+                            <li><a href="#">Vos paramètres</a></li>
+                            <li><a href="#">Contacter mon coach</a></li>
+                            <li><a href="#">Ajouter à mon desktop</a></li>
+                            <li><a href="#" class="red">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                    <li><a href="notifications.html">Notifications <span class="badge red-bg">4</span></a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Modifier votre profil</a></li>
+                    <li><a href="#">Vos paramètres</a></li>
+                    <li><a href="#">Contacter mon coach</a></li>
+                    <li><a href="#">Ajouter à mon desktop</a></li>
+                    <li><a href="#" class="red">Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+    <!-- secondary navigation -->
+    <div id="affix1" class="subnav" data-spy="affix" data-offset-top="60">
+        <ul class="list-inline">
+            <li>
+                <a href="tableau.html">
+                    <span class="visible-xs"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><p>Tableau</p></span>
+                    <span class="hidden-xs"> Tableau de bord</span>
+                </a>
+            </li>
+            <li>
+                <a href="plan.html">
+                    <span class="visible-xs"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><br><p>Plan</p></span>
+                    <span class="hidden-xs"> Mon plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="journal.html">
+                    <span class="visible-xs"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><br><p>Journal</p></span>
+                    <span class="hidden-xs"> Mon journal</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="profil.html">
+                    <span class="visible-xs"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><p>Profil</p></span>
+                    <span class="hidden-xs"> Mon profil</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <span class="visible-xs"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br><p>Resources</p></span>
+                    <span class="hidden-xs"> Resources</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- content -->
+    <div class="container container-1">
+        <div class="row">
+            <!-- information  -->
+            <div class="col-sm-offset-2 col-sm-8">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Information obligatoire</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="prenom" class="col-sm-3 control-label teal">Prénom</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="prenom" placeholder="Votre prénom" value="Mary">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom de famille" class="col-sm-3 control-label teal">Nom de famille</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="nomDeFamille" placeholder="Votre nom de famille" value="Soueidan">
+                                        <p class="profil-label">Cette information est importante pour votre communication avec le coach. </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sexe" class="col-sm-3 control-label teal">Sexe</label>
+                                    <div class="col-sm-9">
+                                        <div class="select-69 has-feedback">
+                                            <select class="form-control">
+                                                <option>Mâle</option>
+                                                <option>Femelle</option>
+                                                <option>Bi-sexuel(le)</option>
+                                                <option>Transgenre</option>
+                                                <option>Autre</option>
+                                            </select>
+                                            <span class="glyphicon glyphicon-menu-down form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date de naissance" class="col-sm-3 control-label teal">Date de naissance</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" placeholder="JJ" value="23">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" placeholder="MMM" value="MAR">
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input type="text" class="form-control" placeholder="AAAA" value="1990">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adresse courriel" class="col-sm-3 control-label teal">Adresse courriel</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="email" placeholder="votrenom@votredomaine.com" value="chris@loogart.com">
+                                        <p class="profil-label">Votre principal moyen de communcation avec votre coach. </p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="btn btn-primary-o btn-block">Save changes</a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- information secondaire -->
+            <div class="col-sm-offset-2 col-sm-4">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Information optionnelle</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="language" class="col-sm-4 control-label teal">Langue</label>
+                                    <div class="col-sm-8">
+                                        <div class="select-69 has-feedback">
+                                            <select class="form-control">
+                                                <option>Anglais</option>
+                                                <option>Français</option>
+                                                <option>Arabe</option>
+                                                <option>Chinois</option>
+                                                <option>Autre</option>
+                                            </select>
+                                            <span class="glyphicon glyphicon-menu-down form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location" class="col-sm-4 control-label teal">Résidence </label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="ville" placeholder="Ville, province" value="Montreal, QC">
+                                    </div>
+                                </div>
+                                <a href="#!" class="btn btn-primary-o btn-block">Save changes</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Facturation</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <a href="#!" class="btn btn-primary btn-block"><i class="fa fa-credit-card"></i> Méthode de paiement</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo profil -->
+            <div class="col-sm-4">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Votre photo de profil</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="profile-photo queenie"></div>
+                            <hr class="subtle">
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                    <span class="btn btn-default teal">Modifier&hellip; <input type="file" style="display: none;" multiple>
+                                </span>
+                                </label>
+                                <input type="text" class="form-control" readonly placeholder="Filename.jpg">
+                            </div>
+                            <hr class="subtle">
+
+                            <a href="#!" class="btn btn-primary-o btn-block">Update photo</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--- footer -->
+    <footer>
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+
+    <!-- create account modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="createAccount">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-facebook btn-lg btn-block" data-dismiss="modal"><i class="fa fa-facebook-official"></i> S'inscrire avec Facebook</button>
+                    <hr class="subtle">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"><i class="fa fa-envelope-o"></i> S'inscrire par courriel</button>
+                    <p>
+                        En vous inscrivant, vous acceptez les <a href="#!" class="teal">termes et les conditions</a> de Nutritionr.
+                    </p>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-6">Déjà un membre de Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Connectez-vous!</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Sign In modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="signIn">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="text" class="form-control input-lg" placeholder="Email" value="chris@loogart.com">
+                        <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="password" class="form-control input-lg" placeholder="Password" value="niggawhutniggawho">
+                        <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <a href="tableau.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-arrow-right"></i> Se connecter</a>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Rappelez-vous de moi
+                        </label>
+                    </div>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-12"><a href="#!" class="teal">Oublié votre mot de passe?</a></p>
+                        <p class="col-xs-6">Pas encore inscrit à Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Créer un compte</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#"><i class="fa fa-cog"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><i class="fa fa-home hidden-xs"></i><span class="visible-xs">Accueil</span></a></li>
+                    <li><a href="pricing.html">Forfaits</a></li>
+                    <li class="active"><a href="team.html">L'équipe</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-section">
+        <div class="container">
+            <h1>L'équipe</h1>
+            <h4>(pour l'instant)</h4>
+            <p>Notre mission est de créer une plateforme qui encourage les gens à atteindre leurs objectifs de santé via la nutrition et l'exercise.</p>
+        </div>
+    </div>
+
+    <!-- row 1 -->
+    <div class="row-block">
+        <div class="container text-center">
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-male" style="background-image:url('./img/charles.jpg')">
+                <h4 class="teal">Charles Lapointe</h4>
+                <h5>CEO</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-female" style="background-image:url('./img/person4.jpg')">
+                <h4 class="teal">Ginette Lapointe</h4>
+                <h5>Co-founder</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-female" style="background-image:url('./img/person5.jpg')">
+                <h4 class="teal">Gertrude Labelle</h4>
+                <h5>Coach en chef</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-male" style="background-image:url('./img/person1.jpg')">
+                <h4 class="teal">Jean Graham</h4>
+                <h5>Assistance coach en chef</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-male" style="background-image:url('./img/person2.jpg')">
+                <h4 class="teal">Jorge LaMamba</h4>
+                <h5>Coach</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-female" style="background-image:url('./img/person6.jpg')">
+                <h4 class="teal">Linda Arsenault</h4>
+                <h5>Coach</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-male" style="background-image:url('./img/person7.jpg')">
+                <h4 class="teal">George Dion</h4>
+                <h5>Coach</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3 team-member">
+                <img class="img-circle avatar-male" style="background-image:url('./img/person3.jpg')">
+                <h4 class="teal">Farid Dee</h4>
+                <h5>Coach</h5>
+                <a href="#!" class="btn btn-primary">Consulter</a>
+                <hr class="subtle visible-xs">
+            </div>
+        </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row-block grey-bg">
+        <div class="container text-center">
+            <div class="col-sm-3">
+                <img class="img-circle avatar-male" style="background-image:url('./img/michel.jpg')">
+                <h4 class="teal">Michel Raymond</h4>
+                <h5>Dextera Communications, dévelopeur web</h5>
+                <a href="#!" class="btn btn-default">Contacter</a>
+                <hr class="subtle visible-xs">
+            </div>
+            <div class="col-sm-3">
+                <img class="img-circle avatar-male" style="background-image:url('./img/chris.png')">
+                <h4 class="teal">Chris Soueidan</h4>
+                <h5>Loogart, graphiste et dévelopeur web</h5>
+                <a href="#!" class="btn btn-default">Contacter</a>
+                <hr class="subtle visible-xs">
+            </div>
+
+        </div>
+    </div>
+
+    <!--- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+</body>
+
+</html>

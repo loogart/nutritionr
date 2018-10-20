@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- Yooooo Num3thod, note that I added "user-scalable=0" in the meta tag above for text zoom and all that... -->
+    <title>Style Guide</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========================MODALS=====================-->
+
+    <!-- create account modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="createAccount">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-facebook btn-lg btn-block" data-dismiss="modal"><i class="fa fa-facebook-official"></i> S'inscrire avec Facebook</button>
+                    <hr class="subtle">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"><i class="fa fa-envelope-o"></i> S'inscrire par courriel</button>
+                    <p>
+                        En vous inscrivant, vous acceptez les <a href="#!" class="teal">termes et les conditions</a> de Nutritionr.
+                    </p>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-6">Déjà un membre de Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#signIn">Connectez-vous!</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- Sign In modal -->
+    <div class="modal modal-signup fade" tabindex="-1" role="dialog" id="signIn">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header visible-xs">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Créer un compte
+                </div>
+                <div class="modal-body">
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="text" class="form-control input-lg" placeholder="Email" value="chris@loogart.com">
+                        <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <div class="form-group form-group-lg has-feedback">
+                        <input type="password" class="form-control input-lg" placeholder="Password" value="niggawhutniggawho">
+                        <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                    <a href="tableau.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-arrow-right"></i> Se connecter</a>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Rappelez-vous de moi
+                        </label>
+                    </div>
+                    <hr class="subtle">
+                    <div class="row">
+                        <p class="col-xs-12"><a href="#!" class="teal">Oublié votre mot de passe?</a></p>
+                        <p class="col-xs-6">Pas encore inscrit à Nutritionr?</p>
+                        <p class="col-xs-6"><a class="btn btn-default teal pull-right" data-dismiss="modal" data-toggle="modal" data-target="#createAccount">Créer un compte</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- FULL_SCREEN MODAL TEAL -->
+    <div class="modal fade" id="howItWorks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:100%;margin:0;">
+            <div class="modal-content teal-bg" style="min-height:100vh;border:0">
+                <div class="modal-header" style="border-bottom:0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step1.png">
+                        <h4 style="line-height:24px;">Connectez virtuellement</h4>
+                        <p>Rencontrez votre coach Nutritionr virtuellement et discutez de vos objectifs nutritionnels.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step2.png">
+                        <h4 style="line-height:24px;">Obtenez un plan personnalisé</h4>
+                        <p>Votre coach de nutrition vous bâtira un plan personalisé pour atteindre vos objectifs.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/how-it-works_step3.png">
+                        <h4 style="line-height:24px;">Suivi par un coach</h4>
+                        <p>Votre progression sera suivie par votre coach et votre plan sera adapté en conséquence de vos résultats.</p>
+                    </div>
+                    <div class="col-sm-12" style="margin-top:40px;">
+                        <a href="#!" class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Débutez aujourd'hui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile coach -->
+    <div class="modal fade" id="mobileCoach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="card" id="affix2" data-spy="affix" data-offset-top="60">
+                <div class="profile-photo sircharles"></div>
+                <div class="card-content text-center">
+                    <h2>Charles</h2>
+                    <p>Ton coach Nutritionr. </p>
+                    <hr>
+                    <a class="btn btn-primary btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Contacter</a>
+                    <a class="btn btn-warning btn-lg btn-block" href="#"><i class="fa fa-envelope"></i> Référer</a>
+                    <a class="btn btn-primary-o btn-block" href="#" data-toggle="modal" data-target="#socialMedia"><i class="fa fa-thumbs-up"></i> Connecter</a>
+                    <a type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal recipe -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="recipe">
+        <div class="modal-dialog" role="document">
+            <div class="card">
+                <div class="card-img" style="background-image:url('./img/home.jpg')"></div>
+                <div class="card-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3>Tisane anti-oxidante</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque distinctio, nihil omnis.</p>
+                    <hr class="subtle">
+                    <!-- ingredients -->
+                    <h4 class="teal">Igrédients</h4>
+                    <ul>
+                        <li>Cras justo odio</li>
+                        <li>Dapibus ac facilisis in</li>
+                        <li>Morbi leo risus</li>
+                        <li>Porta ac consectetur ac</li>
+                        <li>Vestibulum at eros</li>
+                    </ul>
+                    <hr class="subtle">
+                    <!-- instructions -->
+                    <h4 class="teal">Instructions</h4>
+                    <ol>
+                        <li>Cras justo odio</li>
+                        <li>Dapibus ac facilisis in</li>
+                        <li>Morbi leo risus</li>
+                        <li>Porta ac consectetur ac</li>
+                        <li>Vestibulum at eros</li>
+                    </ol>
+                    <hr class="subtle">
+                    <a href="#!" class="btn btn-default btn-block" data-dismiss="modal"><i class="fa fa-times"></i> Fermer cette fenêtre</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- modal workout -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="workout">
+        <div class="modal-dialog" role="document">
+            <div class="card">
+                <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                <div class="card-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3>Ton entraînement</h3>
+                    <div class="panel panel-default">
+                        <!-- Table -->
+                        <table class="table">
+                            <tr>
+                                <td rowspan="4">Jour 1</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise A</td>
+                                <td>15 Reps</td>
+                                <td>3 sets</td>
+                                <td>15 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise B</td>
+                                <td>25 Reps</td>
+                                <td>3 sets</td>
+                                <td>10 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise C</td>
+                                <td>20 Reps</td>
+                                <td>4 sets</td>
+                                <td>5 lbs</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="4">Jour 2</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise D</td>
+                                <td>25 Reps</td>
+                                <td>3 sets</td>
+                                <td>30 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise E</td>
+                                <td>20 Reps</td>
+                                <td>3 sets</td>
+                                <td>15 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise F</td>
+                                <td>10 Reps</td>
+                                <td>3 sets</td>
+                                <td>35 lbs</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Jour 3</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise G</td>
+                                <td>30 Reps</td>
+                                <td>3 sets</td>
+                                <td>5 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise H</td>
+                                <td>25 Reps</td>
+                                <td>3 sets</td>
+                                <td>15 lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Exercise I</td>
+                                <td>5 Reps</td>
+                                <td>3 sets</td>
+                                <td>45 lbs</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr class="subtle">
+                    <a href="#!" class="btn btn-default btn-block" data-dismiss="modal"><i class="fa fa-times"></i> Fermer cette fenêtre</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- filter system -->
+    <div class="modal" id="filters" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="filter-modal">
+
+            <p>Filtrer par type de photo</p>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">
+                    <i class="fa fa-bookmark-o"></i> Journal
+                </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">
+                    <i class="fa fa-cutlery"></i> Repas
+                </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">
+                    <i class="fa fa-line-chart"></i> Photo progrès
+                </label>
+            </div>
+
+            <hr class="subtle">
+            <p>Date de début</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" data-provide="datepicker" class="form-control" value="12-    02-2016">
+                </div>
+            </div>
+            <hr class="subtle">
+            <p>Date de fin</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" data-provide="datepicker" class="form-control" value="12-02-2016">
+                </div>
+            </div>
+            <hr class="subtle">
+
+            <a class="btn btn-primary btn-block" href="#" data-toggle="modal" data-target="#filters"><i class="fa fa-check"></i> Filtrer</a>
+
+        </div>
+
+    </div>
+    <!-- ========================non-modals==================-->
+
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#"><i class="fa fa-cog"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#!"><i class="fa fa-home hidden-xs"></i><span class="visible-xs">Accueil</span></a></li>
+                    <li class="active"><a href="#!">Nav 2</a></li>
+                    <li><a href="#!">Nav 3</a></li>
+                    <li><a href="#!">Nav 4</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifications <span class="badge red-bg">4</span></a>
+                        </a>
+                        <ul class="dropdown-menu notifications-menu" role="menu">
+                            <li class="header">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-bars"></i> Voir toutes les notifications"</p>
+                                </a>
+                            </li>
+                            <li class="unread">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Bonjour Mary, continue à..."</p>
+                                    <p>22 août, 2016 à 15:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-angle-right"></i> Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- secondary navigation -->
+    <div id="affix1" class="subnav" data-spy="affix" data-offset-top="60">
+        <ul class="list-inline">
+            <li class="active">
+                <a href="#!">
+                    <span class="visible-xs"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><p>Tableau</p></span>
+                    <span class="hidden-xs"> Active sec nav</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="visible-xs"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><br><p>Plan</p></span>
+                    <span class="hidden-xs"> Inactive sec nav</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="visible-xs"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><br><p>Journal</p></span>
+                    <span class="hidden-xs"> Mon journal</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="visible-xs"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><p>Profil</p></span>
+                    <span class="hidden-xs"> Mon profil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="visible-xs"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br><p>Resources</p></span>
+                    <span class="hidden-xs"> Resources</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- background-mobile-menu-->
+    <div class="toggle-menu mobile-menu-closed"></div>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-section" style="background-color:hotpink">
+        <div class="container">
+            <h1>Styleguide</h1>
+            <p>For the web. All components such as navigation, cards, sections are included on this page.</p>
+        </div>
+    </div>
+
+    <!-- Pricing tables -->
+    <div class="row-block">
+        <div class="container text-center">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Title h4</h4>
+                <h2>Pricing cards</h2>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card teal-bg">
+                    <i class="fa fa-bullseye fa-3x"></i>
+                    <h2>Consultation</h2>
+                    <hr class="subtle">
+                    <h1>XX<span class="dollars">$</span></h1>
+                    <h3>Une fois</h3>
+                    <ul class="text-left">
+                        <li>Consultation avec un coach Nutritionr</li>
+                        <li>Plan nutritionnel adapté à votre style de vie</li>
+                        <li>Cours d'introduction aux principes de nutrition</li>
+                    </ul>
+                    <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Sélectionner</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card teal-bg">
+                    <i class="fa fa-refresh fa-3x"></i>
+                    <h2>Suivi</h2>
+                    <hr class="subtle">
+                    <h1>XYZ<span class="dollars">$</span></h1>
+                    <h3>Par Mois</h3>
+                    <ul class="text-left">
+                        <li>Plan nutritionnel personnalisé</li>
+                        <li>Rencontres mensuelles avec nutritionniste</li>
+                        <li>Cours d'introduction aux principes de nutrition</li>
+
+                    </ul>
+                    <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Sélectionner</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card teal-bg">
+                    <i class="fa fa-users fa-3x"></i>
+                    <h2>Équipe</h2>
+                    <hr class="subtle">
+                    <h1 style="font-size:50px;">Word</h1>
+                    <h3><br></h3>
+                    <ul class="text-left">
+                        <li>Gérez-vous une équipe sportive</li>
+                        <li>Cherchez-vous à introduire vos joueurs aux principes de nutrition sportive?</li>
+                        <li>Aimeriez-vous optimiser la performance de votre équipe?</li>
+                    </ul>
+                    <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Inscrivez-vous</a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+    <!-- Horizontal card -->
+    <div class="row-block grey-bg">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Title h4</h4>
+                <h2>Horizontal card</h2>
+            </div>
+            <div class="col-sm-12">
+                <div class="card-coach">
+                    <div class="card-img-vertical" style="background-image:url('./img/home2.jpg')"></div>
+                    <div class="card-content-vertical">
+                        <h3>Une santé guidée en ligne</h3>
+                        <p>Nutritionr est une plateforme de coaching nutritionnel en ligne.</p>
+                        <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#howItWorks">Full teal modal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- CTA section -->
+    <div class="row-block">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Title h4</h4>
+                <h2>Call to action</h2>
+            </div>
+            <div class="col-sm-12 text-center">
+                <a href="#!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#createAccount"><i class="fa fa-check"></i> Center modal</a>
+
+                <a class="btn btn-default btn-lg teal" href="#" data-toggle="modal" data-target="#filters"><i class="fa fa-sliders"></i> Modal left</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="row-block grey-bg">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Title h4</h4>
+                <h2>Cards</h2>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/meal-dejeuner.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Plan nutritionnel personnalisé</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Programme d’entraînement offert gratuitement</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/recettes.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Recettes simples</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/education.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Matériel éducatif</h3>
+                        <a href="#!" class="btn btn-default teal" data-toggle="modal" data-target="#createAccount"><i class="fa fa-angle-right"></i> Visionner</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container container-1">
+        <div class="col-sm-offset-2 col-sm-8 text-center">
+            <h4 class="teal">Title h4</h4>
+            <h2>Dashboard, plan, etc</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-offset-1 col-md-4 hidden-xs">
+                <div class="card-coach">
+                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Dismissable Success w/ p text</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque accusamus dolore officiis, enim odit nostrum consectetur dolorem, a nemo hic ducimus, doloribus quia id dicta repellendus et fugit vel delectus?</p>
+                    </div>
+                </div>
+                <div class="card-coach">
+                    <div class="profile-photo sircharles"></div>
+                    <div class="card-content text-center">
+                        <h2>Charles</h2>
+                        <p>Ton coach Nutritionr. </p>
+                        <hr>
+                        <a class="btn btn-primary btn-block" href="#"><i class="fa fa-envelope"></i> Contacter</a>
+                        <a class="btn btn-warning btn-block" href="#"><i class="fa fa-envelope"></i> Référer</a>
+                        <a class="btn btn-primary-o btn-block" href="#" data-toggle="modal" data-target="#socialMedia"><i class="fa fa-thumbs-up"></i> Connecter</a>
+                    </div>
+                </div>
+                <!-- cards w/ image-->
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Card w/ image</h3>
+                        <p>Cards are modular, you can add/remove the main image, same with the footer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h6><i class="fa fa-angle-right"></i> Optional Footer section</h6>
+                    </div>
+                </div>
+
+                <!-- cards w/o image-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Card w/o image</h3>
+                        <p>Cards are modular, you can add/remove the main image, same with the footer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h6><i class="fa fa-angle-right"></i> Optional Footer section</h6>
+                    </div>
+                </div>
+
+                <!-- cards w/o footer-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Card w/o footer/image</h3>
+                        <p>Cards are modular, you can add/remove the main image, same with the footer.</p>
+                    </div>
+                </div>
+
+                <!-- input bar -->
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Input...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-md-6">
+
+                <div class="card-coach">
+                    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Dismissable Warning w/ h3 text</h5>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ut sed non deleniti quas molestiae incidunt cupiditate, nostrum fuga officiis, eos consequuntur, reiciendis, alias ullam eius repellat distinctio ratione dolorem?</h3>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/macro.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Card with table 1</h3>
+                        <div class="panel panel-default">
+                            <!-- Table -->
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Protéines</td>
+                                        <td>100g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Glucides</td>
+                                        <td>160g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lipides</td>
+                                        <td>30g</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="subtle">
+                        <a class="btn btn-default teal" href="plan.html">Voir mon plan</a>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="card-content">
+                        <h3>Bar graph</h3>
+                        <canvas id="myChart" width="400" height="150"></canvas>
+
+                        <hr class="subtle">
+                        <a class="btn btn-default teal" href="journal.html">Voir mon journal</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Line graph</h3>
+                        <canvas id="myChart2" width="400" height="150"></canvas>
+                        <hr class="subtle">
+                        <a class="btn btn-default teal" href="journal.html">Voir mon journal</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/entrainement.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Card with main button</h3>
+                        <a href="#!" class="btn btn-primary btn-block" data-toggle="modal" data-target="#workout">Voir entraînement</a>
+                    </div>
+                </div>
+
+                <!-- nutritional plan card-->
+                <div class="card">
+                    <div class="card-img" style="background-image:url('./img/meal-lever.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Card with food and macros (plan)</h3>
+                        <p>Choisir un exemple de repas à préparer.</p>
+                        <div class="panel panel-default">
+                            <!-- Table -->
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Exemple de repas 1</td>
+                                        <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Tisane anti-oxidante</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exemple de repas 2</td>
+                                        <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Boisson just orange</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exemple de repas 3</td>
+                                        <td><a href="#!" class="teal" data-toggle="modal" data-target="#recipe">Lait au caramel</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h6><i class="fa fa-angle-right"></i> Macronutrition: Protéine: 10g | Lipide: 5g | Glucide: 20g</h6>
+                    </div>
+                </div>
+
+                <!-- input bar -->
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/food1.jpeg')"></div>
+                            <div class="card-content">
+                                <h4>Resource card 1</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="teal" href="article.html">Visionner</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-img" style="background-image:url('./img/food2.jpg')"></div>
+                            <div class="card-content">
+                                <h4>Resource card 2</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a class="teal" href="article.html">Visionner</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <hr>
+                <h4 class="teal">Title h4</h4>
+                <h2>Forms, selects, inputs, etc.</h2>
+            </div>
+            <!-- information obligatoire -->
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Forms, selects and inputs</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="prenom" class="col-sm-3 control-label teal">Prénom</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="prenom" placeholder="Votre prénom" value="Mary">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom de famille" class="col-sm-3 control-label teal">Nom de famille</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="nomDeFamille" placeholder="Votre nom de famille" value="Soueidan">
+                                        <p class="profil-label">Cette information est importante pour votre communication avec le coach. </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sexe" class="col-sm-3 control-label teal">Sexe</label>
+                                    <div class="col-sm-9">
+                                        <div class="select-69 has-feedback">
+                                            <select class="form-control">
+                                                <option>Mâle</option>
+                                                <option>Femelle</option>
+                                                <option>Bi-sexuel(le)</option>
+                                                <option>Transgenre</option>
+                                                <option>Autre</option>
+                                            </select>
+                                            <span class="glyphicon glyphicon-menu-down form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date de naissance" class="col-sm-3 control-label teal">Date de naissance</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" placeholder="JJ" value="23">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" placeholder="MMM" value="MAR">
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input type="text" class="form-control" placeholder="AAAA" value="1990">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adresse courriel" class="col-sm-3 control-label teal">Adresse courriel</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="email" placeholder="votrenom@votredomaine.com" value="chris@loogart.com">
+                                        <p class="profil-label">Votre principal moyen de communcation avec votre coach. </p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="btn btn-primary-o btn-block">Save changes</a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- information secondaire -->
+            <div class="col-sm-offset-1 col-sm-5">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Information optionnelle</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="language" class="col-sm-4 control-label teal">Langue</label>
+                                    <div class="col-sm-8">
+                                        <div class="select-69 has-feedback">
+                                            <select class="form-control">
+                                                <option>Anglais</option>
+                                                <option>Français</option>
+                                                <option>Arabe</option>
+                                                <option>Chinois</option>
+                                                <option>Autre</option>
+                                            </select>
+                                            <span class="glyphicon glyphicon-menu-down form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location" class="col-sm-4 control-label teal">Résidence </label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="ville" placeholder="Ville, province" value="Montreal, QC">
+                                    </div>
+                                </div>
+                                <a href="#!" class="btn btn-primary-o btn-block">Save changes</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Facturation</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <a href="#!" class="btn btn-primary btn-block"><i class="fa fa-credit-card"></i> Méthode de paiement</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo profil -->
+            <div class="col-sm-5">
+                <div class="card-coach">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Votre photo de profil</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="profile-photo queenie"></div>
+                            <hr class="subtle">
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                    <span class="btn btn-default teal">Modifier&hellip; <input type="file" style="display: none;" multiple>
+                                </span>
+                                </label>
+                                <input type="text" class="form-control" readonly placeholder="Filename.jpg">
+                            </div>
+                            <hr class="subtle">
+
+                            <a href="#!" class="btn btn-primary-o btn-block">Update photo</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Jumbotron Article -->
+    <div class="jumbotron jumbotron-resources" style="background-image:url('./img/food1.jpeg')"></div>
+
+    <!-- jumbotron Home -->
+    <div class="jumbotron jumbotron-home" style="background-image:url('./img/home.jpg')">
+        <div class="container">
+            <h1>Titre h1</h1>
+            <p>Tagline Uber-hot</p>
+            <a href="#!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#createAccount"><i class="fa fa-plus"></i> Modal center</a>
+        </div>
+    </div>
+
+    <!-- Blog content -->
+    <div class="article-block">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8">
+                <a href="#!" class="btn btn-default btn-sm pull-right"><i class="fa fa-arrow-left"></i> Bouton de retour</a>
+                <h6>Article par <a href="#!" class="teal">Auteur</a>, Date</h6>
+                <h2>Title h2</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.</p>
+                <div class="quotes">
+                    <h3><i class="fa fa-quote-left"></i> To be or not to be, that is the <i>questionr</i>. <i class="fa fa-quote-right"></i></h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.</p>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WEyOaFPrfN0"></iframe>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates sed ut vero debitis neque sint ducimus modi eveniet optio, molestias id possimus earum sequi deleniti, eum voluptatibus aut, quam.</p>
+                <hr class="subtle">
+                <!-- back button 2-->
+                <a href="#!" class="btn btn-default"><i class="fa fa-arrow-left"></i> 2e bouton de resources</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- images -->
+    <div class="row-block grey-bg">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h4 class="teal">Title h4</h4>
+                <h2>Illustrations</h2>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-lever.jpg">
+                   <p>Au lever</p>
+            </div>            <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-dejeuner.jpg">
+                   <p>Dejeuner</p>
+            </div>
+
+                        <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-collation.jpg">
+                   <p>Collation</p>
+            </div>
+                               <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-diner.jpg">
+                   <p>Diner</p>
+            </div>     
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-intra.jpg">
+                   <p>Intra</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/meal-souper.jpg">
+                   <p>Souper</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/macro.jpg">
+                   <p>Macro</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/recettes.jpg">
+                   <p>Recettes</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/habitudes.jpg">
+                   <p>Habitudes</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/education.jpg">
+                   <p>Education</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/entrainement.jpg">
+                   <p>Training</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/professional.png">
+                   <p>Professional</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/macbook.png">
+                   <p>Macbook</p>
+            </div>
+                                    <div class="col-sm-12 col-md-6">
+                   <img class="img-responsive" src="img/adaptable.png">
+                   <p>Adaptable</p>
+            </div>
+                                    <div class="col-sm-12 col-md-4">
+                   <img class="img-responsive" src="img/how-it-works_step1.png">
+                   <p>how it works 1</p>
+            </div>
+                                               <div class="col-sm-12 col-md-4">
+                   <img class="img-responsive" src="img/how-it-works_step2.png">
+                   <p>how it works 2</p>
+            </div>
+                                               <div class="col-sm-12 col-md-4">
+                   <img class="img-responsive" src="img/how-it-works_step3.png">
+                   <p>how it works 3</p>
+            </div>
+        </div>
+    </div>
+    <!--- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-offset-2 col-md-2">
+                    <p class="teal">Compagnie</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Termes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Coachs</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Devenir coach</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Connecter</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="teal">Langue</p>
+                    <div class="select-styled">
+                        <select class="form-control">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Arabe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/bootstrap-switch.min.js"></script>
+    <script>
+        // chart
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["28 jul", "4 aou", "11 aou", "18 aou", "25 aou", "1 sep"],
+                datasets: [{
+                    label: 'Poids',
+                    data: [150, 154, 148, 146, 143, 140],
+                    backgroundColor: [
+                '#f7ce5b',
+                '#f7b05b',
+                '#11baa1',
+                '#11baa1',
+                '#11baa1',
+                '#11baa1'
+            ]
+        }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+            }]
+                }
+            }
+        });
+
+        // chart 2
+        var ctx = document.getElementById("myChart2");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["28 jul", "4 aou", "11 aou", "18 aou", "25 aou", "1 sep"],
+                datasets: [{
+                    label: 'Énergie',
+                    data: [60, 75, 80, 78, 100, 95],
+                    borderColor: '#11baa1',
+                    pointBackgroundColor: '#11baa1',
+                    backgroundColor: "rgba(75,192,192,0.2)",
+        }]
+            },
+
+        });
+    </script>
+</body>
+
+</html>

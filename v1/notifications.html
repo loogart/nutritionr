@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nutritionr</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,700" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- primary navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="teal"><i class="fa fa-bars"></i> MENU</span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="brand"></span></a>
+                <a class="settings visible-xs" href="#" data-toggle="modal" data-target="#mobileCoach"><i class="fa fa-phone"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifications <span class="badge red-bg">4</span></a>
+                        </a>
+                        <ul class="dropdown-menu notifications-menu" role="menu">
+                            <li class="unread">
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Bonjour Mary, continue à..."</p>
+                                    <p>22 août, 2016 à 15:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-check-square"></i> Plan mis jour le 18 août 2016</p>
+                                    <p>18 août 2016 à 10:30</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <p><i class="fa fa-comment-o"></i> Message de Charles: "Hey Mary, n'oublie pas de..."</p>
+                                    <p>12 août, 2016 à 16:30</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mary 
+                        <span class="img-profile" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Modifier votre profil</a></li>
+                            <li><a href="#">Vos paramètres</a></li>
+                            <li><a href="#">Contacter mon coach</a></li>
+                            <li><a href="#">Ajouter à mon desktop</a></li>
+                            <li><a href="#" class="red">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Modifier votre profil</a></li>
+                    <li><a href="#">Vos paramètres</a></li>
+                    <li><a href="#">Contacter mon coach</a></li>
+                    <li><a href="#">Ajouter à mon desktop</a></li>
+                    <li><a href="#" class="red">Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- secondary navigation -->
+    <!--<div id="affix1" class="subnav" data-spy="affix" data-offset-top="60">
+        <ul class="list-inline">
+            <li class="active">
+                <a href="tableau.html">
+                    <span class="visible-xs"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i><p>Tableau</p></span>
+                    <span class="hidden-xs"> Tableau de bord</span>
+                </a>
+            </li>
+            <li>
+                <a href="plan.html">
+                    <span class="visible-xs"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><br><p>Plan</p></span>
+                    <span class="hidden-xs"> Mon plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="journal.html">
+                    <span class="visible-xs"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i><br><p>Journal</p></span>
+                    <span class="hidden-xs"> Mon journal</span>
+                </a>
+            </li>
+            <li>
+                <a href="profil.html">
+                    <span class="visible-xs"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><p>Profil</p></span>
+                    <span class="hidden-xs"> Mon profil</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <span class="visible-xs"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br><p>Resources</p></span>
+                    <span class="hidden-xs"> Resources</span>
+                </a>
+            </li>
+        </ul>
+    </div>-->
+
+
+    <!-- content -->
+    <div class="notifications-left">
+        <a href="tableau.html" class="retour">
+            <i class="fa fa-angle-left"> Retour</i>
+        </a>
+        <ul class="list-group notifications-list-group">
+            <li class="list-group-item unread"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Message de Charles, 22 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Mise  à jour du plan, 18 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Message de Charles, 14 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Mise  à jour du plan, 12 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Message de Charles, 7 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 juilet 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 juillet 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 juin 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 juin 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-check-square"></i> Message de Charles, 2 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 août 2016</a></li>
+            <li class="list-group-item"><a href="#!" class="click-mobile-notifications"><i class="fa fa-comment-o"></i> Mise  à jour du plan, 18 août 2016</a></li>
+
+        </ul>
+    </div>
+    <div class="col-sm-8 notifications-right">
+        <a href="#!" class="retour click-mobile-notifications visible-xs">
+            <i class="fa fa-angle-left"> Retour aux messages</i>
+        </a>
+        <ul class="media-list">
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <span class="media-object messages-avatar"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Sujet: Besoin de ta date de naissance</h4>
+                    <h6>22 août 2016, 15:30</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae rerum illum, maiores quos quibusdam dolorem, accusamus saepe ab quam at. Eaque magni, fuga maiores alias ad eligendi eum reiciendis.
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-left pull-right">
+                    <a href="#">
+                        <span class="media-object messages-avatar" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Sujet: RE: Besoin de ta date de naissance</h4>
+                    <h6>22 août 2016, 16:30</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae rerum illum, maiores quos quibusdam dolorem, accusamus saepe ab quam at.
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <span class="media-object messages-avatar"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Sujet: Besoin de ta date de naissance</h4>
+                    <h6>22 août 2016, 15:30</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae rerum illum, maiores quos quibusdam dolorem, accusamus saepe ab quam at. Eaque magni, fuga maiores alias ad eligendi eum reiciendis.
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-left pull-right">
+                    <a href="#">
+                        <span class="media-object messages-avatar" style="background-image:url('./img/profile-photo.jpeg')"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Sujet: RE: Besoin de ta date de naissance</h4>
+                    <h6>22 août 2016, 16:30</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae rerum illum, maiores quos quibusdam dolorem, accusamus saepe ab quam at.
+                </div>
+            </li>
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <span class="media-object messages-avatar"></span>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Sujet: Besoin de ta date de naissance</h4>
+                    <h6>22 août 2016, 15:30</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere recusandae rerum illum, maiores quos quibusdam dolorem, accusamus saepe ab quam at. Eaque magni, fuga maiores alias ad eligendi eum reiciendis.
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="respond hidden-xs">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Écrivez votre réponse...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Envoyer</button>
+                    </span>
+            </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/bootstrap-switch.min.js"></script>
+    <script>
+        // chart
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["28 jul", "4 aou", "11 aou", "18 aou", "25 aou", "1 sep"],
+                datasets: [{
+                    label: 'Poids',
+                    data: [150, 154, 148, 146, 143, 140],
+                    backgroundColor: [
+                '#f7ce5b',
+                '#f7b05b',
+                '#11baa1',
+                '#11baa1',
+                '#11baa1',
+                '#11baa1'
+            ]
+        }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+            }]
+                }
+            }
+        });
+
+        // chart 2
+        var ctx = document.getElementById("myChart2");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["28 jul", "4 aou", "11 aou", "18 aou", "25 aou", "1 sep"],
+                datasets: [{
+                    label: 'Énergie',
+                    data: [60, 75, 80, 78, 100, 95],
+                    borderColor: '#11baa1',
+                    pointBackgroundColor: '#11baa1',
+                    backgroundColor: "rgba(75,192,192,0.2)",
+        }]
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>
