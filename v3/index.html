@@ -13,9 +13,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo-full-teal.svg"></a>
+            <a class="navbar-brand" href="#">
+                <h1><img src="img/logo-full-teal.svg"></h1>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,16 +36,42 @@
                         <a class="nav-link" href="#">Blogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-jaurange text-white" href="#">Créez votre compte</a>
+                        <a class="btn btn-sm btn-jaurange text-white shadow-none" href="#">Créez votre compte</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="">
-        
-    </div>
+    <main>
+        <section class="jumbotronius position-relative">
+            <div class="d-flex flex-column flex-sm-row">
+                <img class="d-none d-md-flex position-absolute phone-in-hand" src="./img/hand-app-screen.png" alt="Main qui tient un téléphone intelligent avec l'interface usager de l'application Nutritionr">
+                <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-start align-items-sm-center p-5 text-center bg-white w-100 overflow-hidden illustration-jumbo background__mieux-etre">
+                    <img src="img/logo-mieux-etre.svg" class="mb-4" alt="logo Nutritionr Mieux-Être">
+                    <img src="./img/branche-mieux-etre.svg" class="d-none d-sm-block mb-sm-5 mx-auto" alt="illustration d'une femme qui tient une pomme dans sa main">
+                    <p class="d-none d-sm-block w-75 mx-auto">Développez des bonnes habitudes pour améliorer et maintenir votre bonne santé! </p>
+                    <a href="#!" class="btn btn-turquoise mx-sm-auto"><i class="fas fa-play"></i> Plus d'info</a>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-start align-items-sm-center p-5 text-center bg-gris w-100 overflow-hidden illustration-jumbo background__performance">
+                    <img src="img/logo-performance.svg" class="mb-4" alt="logo Nutritionr Performance">
+                    <img src="./img/branche-performance.svg" class="d-none d-sm-block mb-sm-5 mx-auto" alt="illustration d'un homme qui montre son bicep">
+                    <p class="d-none d-sm-block text-white w-75 mx-auto">Mangez et bougez pour performer à votre maximum!</p>
+                    <a href="#!" class="btn btn-light text-turquoise mx-sm-auto"><i class="fas fa-play"></i> Plus d'info</a>
+                </div>
+            </div>
+        </section>
+        <section class="video-spot bg-turquoise text-white text-center py-5 p-sm-6">
+            <div class="container">
+                <h2 class="h1 font-weight-bold mb-4 mb-sm-5">Qu'est-ce que nutritionr?</h2>
+                <div style="padding:56.25% 0 0 0;position:relative;" class="shadow-lg"><iframe src="https://player.vimeo.com/video/194564548?color=11BAA1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </section>
 
+    </main>
+    <footer>
+
+    </footer>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
