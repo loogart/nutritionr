@@ -16,9 +16,9 @@ $btn-padding-x-sm:1rem;
 $btn-padding-x-lg: 2.5rem;
 
 
-$theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424);
+$theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#D8D8D8);
 
-$colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424);
+$colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#D8D8D8);
 
 $spacers:("6": 5rem);
 
@@ -107,11 +107,17 @@ section.jumbotronius {
 
 }
 
+
+.container {
+    max-width: 69%;
+}
+
 @media (max-width:575.98px) {
     .illustration-jumbo {
         min-height: calc(50vh - 28px);
         background-repeat: no-repeat;
         background-size: 40%;
+
     }
 
     .background__mieux-etre {
@@ -144,7 +150,37 @@ section.jumbotronius {
 
 section.video-spot {
     margin-top: -0.5rem;
-    background: url('./img/video-background.svg') no-repeat 175% 50%,linear-gradient(to bottom, $turquoise 0%, $turquoise 69%, $turquoise 69%, $white 69%, $white 100%);
+    background: url('./img/video-background.svg') no-repeat 175% 50%, linear-gradient(to bottom, $turquoise 0%, $turquoise 69%, $turquoise 69%, $white 69%, $white 100%);
 
+}
 
+section.featurettes {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+section.low-cta {
+    background-image: url('img/branche-mieux-etre.svg');
+    background-repeat: no-repeat;
+    background-position: -20% 10%;
+    background-size: 40%;
+}
+
+@media(max-width:575.98px) {
+    section.low-cta {
+        background-position: -50%;
+        background-size: 80%;
+    }
+}
+
+section.partenaires{
+    a img{
+        object-fit: contain;
+        width:240px;
+        height:100px;
+        margin:1rem 2rem;
+        filter: grayscale(1);
+    }
 }
