@@ -16,9 +16,9 @@ $btn-padding-x-sm:1rem;
 $btn-padding-x-lg: 2.5rem;
 
 
-$theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#D8D8D8);
+$theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#E5E5E5);
 
-$colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#D8D8D8);
+$colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#E5E5E5);
 
 $spacers:("6": 5rem);
 
@@ -31,12 +31,13 @@ $jaurange: #F6921E;
 $jaune: #F7CE5B;
 $gris: #414042;
 $noir: #242424;
+$plain-gray: #E5E5E5;
 
 // New Components,  and Functions / Nesting and Mixins
 .navbar-light {
 
     .navbar-nav {
-        @media(min-width: 768px) {
+        @media(min-width: 576px) {
             li.nav-item {
                 margin: auto 0.5rem;
             }
@@ -107,11 +108,6 @@ section.jumbotronius {
 
 }
 
-
-.container {
-    max-width:69%;
-}
-
 @media (max-width:575.98px) {
     .illustration-jumbo {
         min-height: calc(50vh - 28px);
@@ -151,7 +147,6 @@ section.jumbotronius {
 section.video-spot {
     margin-top: -0.5rem;
     background: url('./img/video-background.svg') no-repeat 175% 50%, linear-gradient(to bottom, $turquoise 0%, $turquoise 69%, $turquoise 69%, $white 69%, $white 100%);
-
 }
 
 section.featurettes {
@@ -175,12 +170,57 @@ section.low-cta {
     }
 }
 
-section.partenaires{
-    a img{
+section.partenaires {
+    a img {
         object-fit: contain;
-        width:240px;
-        height:100px;
-        margin:1rem 2rem;
+        width: 240px;
+        height: 100px;
+        margin: 1rem 2rem;
         filter: grayscale(1);
+    }
+}
+
+section.branch-features__mieux-etre {
+    background: linear-gradient(to bottom, $plain-gray 0%, $plain-gray 49%, $plain-gray 49%, $white 49%, $white 100%);
+
+    @media(min-width: 576px) {
+        .container {
+            padding: 0 3rem;
+        }
+    }
+
+    .feature {
+        max-width: 240px;
+    }
+
+    div.rounded-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    img {
+        width: 69px;
+        height: 69px;
+        object-fit: contain;
+    }
+
+    .bar-left {
+        border-left: 8px solid $turquoise;
+        padding-left: 1.25rem;
+    }
+
+}
+
+section.phototron {
+    min-height: 500px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index:-1;
     }
 }
