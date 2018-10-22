@@ -7705,4 +7705,28 @@ section.processus .gray__line {
 section.processus .turquoise__line {
   border-color: #11BAA1; }
 
+section.pricing__mieux-etre {
+  background-image: url("./img/branche-mieux-etre.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: -5% 140%; }
+  section.pricing__mieux-etre .pricing-card {
+    border-radius: 0.5rem; }
+    section.pricing__mieux-etre .pricing-card h6 .currency {
+      font-size: 2rem;
+      letter-spacing: 4px;
+      margin-left: 10px; }
+    section.pricing__mieux-etre .pricing-card ul.list-features {
+      padding-left: 0; }
+    section.pricing__mieux-etre .pricing-card ul.list-features li {
+      /* Text color */
+      list-style-type: none; }
+    section.pricing__mieux-etre .pricing-card ul.list-features li:before {
+      content: '\2022 ';
+      padding-right: 0.5em; }
+    section.pricing__mieux-etre .pricing-card ul.list-features.turquoise-bullets li:before {
+      color: #11BAA1; }
+    section.pricing__mieux-etre .pricing-card ul.list-features.jaune-bullets li:before {
+      color: #F7CE5B; }
+
 /*# sourceMappingURL=styles.css.map */

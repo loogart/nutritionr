@@ -17,7 +17,6 @@ $btn-padding-x-lg: 2.5rem;
 
 $border-width: 3px;
 
-
 $theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#E5E5E5);
 
 $colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#E5E5E5);
@@ -37,7 +36,6 @@ $plain-gray: #E5E5E5;
 
 // New Components,  and Functions / Nesting and Mixins
 .navbar-light {
-
     .navbar-nav {
         @media(min-width: 576px) {
             li.nav-item {
@@ -98,7 +96,6 @@ section.jumbotronius {
     overflow: hidden;
     display: inline-block;
 
-
     .phone-in-hand {
         max-height: 569px;
         object-fit: contain;
@@ -133,7 +130,6 @@ section.jumbotronius {
     box-shadow: $box-shadow-lg;
     transition: all 0.25 ease;
 
-    // Share hover and focus styles
     @include hover-focus {
         text-decoration: none;
         box-shadow: $box-shadow-sm;
@@ -210,7 +206,6 @@ section.branch-features__mieux-etre {
         border-left: 8px solid $turquoise;
         padding-left: 1.25rem;
     }
-
 }
 
 section.phototron {
@@ -229,10 +224,9 @@ section.phototron {
 }
 
 section.processus {
-    .turquoise-border {
+    .turquoise-border{
         border-color: $turquoise;
     }
-
     %vertical-line-shared {
         height: 30px;
         position: absolute;
@@ -254,6 +248,38 @@ section.processus {
     .turquoise__line {
         @extend %vertical-line-shared;
         border-color: $turquoise;
+    }
+}
+
+section.pricing__mieux-etre {
+    background-image: url('./img/branche-mieux-etre.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: -5% 140%;
+    .pricing-card {
+        border-radius: 0.5rem;
+        h6 .currency {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin-left: 10px;
+        }
+        ul.list-features {
+            padding-left: 0;
+        }
+        ul.list-features li {
+            /* Text color */
+            list-style-type: none;
+        }
+        ul.list-features li:before {
+            content: '\2022 ';
+            padding-right: 0.5em;
+        }
+        ul.list-features.turquoise-bullets li:before {
+            color: $turquoise;
+        }
+        ul.list-features.jaune-bullets li:before {
+            color: $jaune;
+        }
     }
 
 }
