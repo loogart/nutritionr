@@ -15,6 +15,8 @@ $btn-padding-x:2rem;
 $btn-padding-x-sm:1rem;
 $btn-padding-x-lg: 2.5rem;
 
+$border-width: 3px;
+
 
 $theme-colors: ("turquoise":#11BAA1, "jaurange":#F6921E, "jaune":#F7CE5B, "gris":#414042, "noir":#242424, "plain-gray":#E5E5E5);
 
@@ -212,7 +214,8 @@ section.branch-features__mieux-etre {
 }
 
 section.phototron {
-    min-height: 500px;
+    min-height: 666px;
+
     img {
         object-fit: cover;
         width: 100%;
@@ -221,6 +224,36 @@ section.phototron {
         left: 0;
         right: 0;
         top: 0;
-        z-index:-1;
+        z-index: -1;
     }
+}
+
+section.processus {
+    .turquoise-border {
+        border-color: $turquoise;
+    }
+
+    %vertical-line-shared {
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 0;
+        border-left: 4px solid;
+    }
+
+    .vertcial-line {
+        @extend %vertical-line-shared;
+    }
+
+    .gray__line {
+        @extend %vertical-line-shared;
+        border-color: $plain-gray;
+    }
+
+    .turquoise__line {
+        @extend %vertical-line-shared;
+        border-color: $turquoise;
+    }
+
 }
