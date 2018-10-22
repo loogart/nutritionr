@@ -213,11 +213,11 @@ section.branch-features {
     }
 }
 
-section.branch-features.feature__mieux-etre{
+section.branch-features.feature__mieux-etre {
     background: linear-gradient(to bottom, $plain-gray 0%, $plain-gray 49%, $plain-gray 49%, $white 49%, $white 100%);
 }
 
-section.branch-features.feature__performance{
+section.branch-features.feature__performance {
     background: linear-gradient(to bottom, $turquoise 0%, $turquoise 49%, $turquoise 49%, $gris 49%, $gris 100%);
 }
 
@@ -298,19 +298,44 @@ section.pricing {
             color: $jaune;
         }
     }
-    .mb-minus1{
-      margin-bottom:-1px;   
+
+    .mb-minus1 {
+        margin-bottom: -1px;
     }
 }
-.pricing__mieux-etre{
+
+.pricing__mieux-etre {
     background-image: url('./img/branche-mieux-etre.svg');
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: -5% 140%;
 }
-.pricing__performance{
+
+.pricing__performance {
     background-image: url('./img/branche-performance.svg');
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: -20% 140%;
+}
+
+section.team-jumbotron {
+    margin-bottom: -0.5rem;
+    height: 40vh;
+    background-image: url('./img/teamwork-artwork.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.teammates {
+    .media {
+        width:50%;
+        margin-bottom:3rem;
+        img {
+            width: 120px;
+            height:120px;
+            object-fit: cover;
+        }
+
+    }
 }
