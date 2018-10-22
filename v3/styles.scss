@@ -42,6 +42,19 @@ $plain-gray: #E5E5E5;
                 margin: auto 0.5rem;
             }
         }
+        
+        @media (max-width:767px){
+            .nav-item{
+                padding-top:1rem;
+                padding-bottom:1rem;
+                border-bottom: 1px dotted #e5e5e5;
+                a.nav-link {
+                    font-size: 1.6rem;
+                    font-weight: bolder;
+                    color:$gray;
+                }
+            }
+        }
 
         .nav-link {
             color: $noir;
@@ -94,6 +107,16 @@ nav.sticky-top {
     position: -webkit-sticky;
     top: 0;
     z-index: 1030;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.navbar-collapse.collapse.show {
+    height: calc(100vh - 60px);
 }
 
 section.jumbotronius {
@@ -331,15 +354,17 @@ section.teammates {
     .media {
         width: 45%;
         margin-bottom: 3rem;
-        margin-right:1rem;
+        margin-right: 1rem;
+
         img {
             width: 120px;
             height: 120px;
             object-fit: cover;
-            border:5px solid #fff;
+            border: 5px solid #fff;
             border-radius: 5rem;
         }
     }
+
     @media(max-width:767px) {
         .media {
             width: 100%
