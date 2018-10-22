@@ -329,13 +329,20 @@ section.team-jumbotron {
 
 section.teammates {
     .media {
-        width:50%;
-        margin-bottom:3rem;
+        width: 45%;
+        margin-bottom: 3rem;
+        margin-right:1rem;
         img {
             width: 120px;
-            height:120px;
+            height: 120px;
             object-fit: cover;
+            border:5px solid #fff;
+            border-radius: 5rem;
         }
-
+    }
+    @media(max-width:767px) {
+        .media {
+            width: 100%
+        }
     }
 }

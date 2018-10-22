@@ -9857,13 +9857,21 @@ section.team-jumbotron {
 }
 
 section.teammates .media {
-  width: 50%;
+  width: 45%;
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 section.teammates .media img {
   width: 120px;
   height: 120px;
   object-fit: cover;
+  border: 5px solid #fff;
+  border-radius: 5rem;
+}
+@media (max-width: 767px) {
+  section.teammates .media {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
