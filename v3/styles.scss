@@ -185,9 +185,7 @@ section.partenaires {
     }
 }
 
-section.branch-features__mieux-etre {
-    background: linear-gradient(to bottom, $plain-gray 0%, $plain-gray 49%, $plain-gray 49%, $white 49%, $white 100%);
-
+section.branch-features {
     @media(min-width: 576px) {
         .container {
             padding: 0 3rem;
@@ -214,6 +212,15 @@ section.branch-features__mieux-etre {
         padding-left: 1.25rem;
     }
 }
+
+section.branch-features.feature__mieux-etre{
+    background: linear-gradient(to bottom, $plain-gray 0%, $plain-gray 49%, $plain-gray 49%, $white 49%, $white 100%);
+}
+
+section.branch-features.feature__performance{
+    background: linear-gradient(to bottom, $turquoise 0%, $turquoise 49%, $turquoise 49%, $gris 49%, $gris 100%);
+}
+
 
 section.phototron {
     min-height: 666px;
@@ -259,12 +266,7 @@ section.processus {
     }
 }
 
-section.pricing__mieux-etre {
-    background-image: url('./img/branche-mieux-etre.svg');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: -5% 140%;
-
+section.pricing {
     .pricing-card {
         border-radius: 0.5rem;
 
@@ -296,5 +298,19 @@ section.pricing__mieux-etre {
             color: $jaune;
         }
     }
-
+    .mb-minus1{
+      margin-bottom:-1px;   
+    }
+}
+.pricing__mieux-etre{
+    background-image: url('./img/branche-mieux-etre.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: -5% 140%;
+}
+.pricing__performance{
+    background-image: url('./img/branche-performance.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: -20% 140%;
 }

@@ -7667,23 +7667,27 @@ section.partenaires a img {
   margin: 1rem 2rem;
   filter: grayscale(1); }
 
-section.branch-features__mieux-etre {
+@media (min-width: 576px) {
+  section.branch-features .container {
+    padding: 0 3rem; } }
+section.branch-features .feature {
+  max-width: 240px; }
+section.branch-features div.rounded-circle {
+  width: 160px;
+  height: 160px; }
+section.branch-features img {
+  width: 69px;
+  height: 69px;
+  object-fit: contain; }
+section.branch-features .bar-left {
+  border-left: 8px solid #11BAA1;
+  padding-left: 1.25rem; }
+
+section.branch-features.feature__mieux-etre {
   background: linear-gradient(to bottom, #E5E5E5 0%, #E5E5E5 49%, #E5E5E5 49%, #fff 49%, #fff 100%); }
-  @media (min-width: 576px) {
-    section.branch-features__mieux-etre .container {
-      padding: 0 3rem; } }
-  section.branch-features__mieux-etre .feature {
-    max-width: 240px; }
-  section.branch-features__mieux-etre div.rounded-circle {
-    width: 160px;
-    height: 160px; }
-  section.branch-features__mieux-etre img {
-    width: 69px;
-    height: 69px;
-    object-fit: contain; }
-  section.branch-features__mieux-etre .bar-left {
-    border-left: 8px solid #11BAA1;
-    padding-left: 1.25rem; }
+
+section.branch-features.feature__performance {
+  background: linear-gradient(to bottom, #11BAA1 0%, #11BAA1 49%, #11BAA1 49%, #414042 49%, #414042 100%); }
 
 section.phototron {
   min-height: 666px; }
@@ -7711,28 +7715,37 @@ section.processus .gray__line {
 section.processus .turquoise__line {
   border-color: #11BAA1; }
 
-section.pricing__mieux-etre {
+section.pricing .pricing-card {
+  border-radius: 0.5rem; }
+  section.pricing .pricing-card h6 .currency {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-left: 10px; }
+  section.pricing .pricing-card ul.list-features {
+    padding-left: 0; }
+  section.pricing .pricing-card ul.list-features li {
+    /* Text color */
+    list-style-type: none; }
+  section.pricing .pricing-card ul.list-features li:before {
+    content: '\2022 ';
+    padding-right: 0.5em; }
+  section.pricing .pricing-card ul.list-features.turquoise-bullets li:before {
+    color: #11BAA1; }
+  section.pricing .pricing-card ul.list-features.jaune-bullets li:before {
+    color: #F7CE5B; }
+section.pricing .mb-minus1 {
+  margin-bottom: -1px; }
+
+.pricing__mieux-etre {
   background-image: url("./img/branche-mieux-etre.svg");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: -5% 140%; }
-  section.pricing__mieux-etre .pricing-card {
-    border-radius: 0.5rem; }
-    section.pricing__mieux-etre .pricing-card h6 .currency {
-      font-size: 2rem;
-      letter-spacing: 4px;
-      margin-left: 10px; }
-    section.pricing__mieux-etre .pricing-card ul.list-features {
-      padding-left: 0; }
-    section.pricing__mieux-etre .pricing-card ul.list-features li {
-      /* Text color */
-      list-style-type: none; }
-    section.pricing__mieux-etre .pricing-card ul.list-features li:before {
-      content: '\2022 ';
-      padding-right: 0.5em; }
-    section.pricing__mieux-etre .pricing-card ul.list-features.turquoise-bullets li:before {
-      color: #11BAA1; }
-    section.pricing__mieux-etre .pricing-card ul.list-features.jaune-bullets li:before {
-      color: #F7CE5B; }
+
+.pricing__performance {
+  background-image: url("./img/branche-performance.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: -20% 140%; }
 
 /*# sourceMappingURL=styles.css.map */
