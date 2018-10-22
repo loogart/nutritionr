@@ -7601,6 +7601,12 @@ a.text-plain-gray:hover, a.text-plain-gray:focus {
   line-height: 0;
   margin: 0; }
 
+nav.sticky-top {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1030; }
+
 section.jumbotronius {
   min-height: 50vh;
   width: 100%;

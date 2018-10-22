@@ -81,12 +81,17 @@ $plain-gray: #E5E5E5;
             }
         }
     }
-
     .navbar-brand h1 {
         font-size: 1rem;
         line-height: 0;
         margin: 0;
     }
+}
+nav.sticky-top {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index:1030;
 }
 
 section.jumbotronius {
