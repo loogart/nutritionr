@@ -81,17 +81,19 @@ $plain-gray: #E5E5E5;
             }
         }
     }
+
     .navbar-brand h1 {
         font-size: 1rem;
         line-height: 0;
         margin: 0;
     }
 }
+
 nav.sticky-top {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index:1030;
+    z-index: 1030;
 }
 
 section.jumbotronius {
@@ -229,9 +231,10 @@ section.phototron {
 }
 
 section.processus {
-    .turquoise-border{
+    .turquoise-border {
         border-color: $turquoise;
     }
+
     %vertical-line-shared {
         height: 30px;
         position: absolute;
@@ -261,27 +264,34 @@ section.pricing__mieux-etre {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: -5% 140%;
+
     .pricing-card {
         border-radius: 0.5rem;
+
         h6 .currency {
             font-size: 2rem;
             letter-spacing: 4px;
             margin-left: 10px;
         }
+
         ul.list-features {
             padding-left: 0;
         }
+
         ul.list-features li {
             /* Text color */
             list-style-type: none;
         }
+
         ul.list-features li:before {
             content: '\2022 ';
             padding-right: 0.5em;
         }
+
         ul.list-features.turquoise-bullets li:before {
             color: $turquoise;
         }
+
         ul.list-features.jaune-bullets li:before {
             color: $jaune;
         }
